@@ -3,82 +3,102 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nome do Curso | Dra. Juliana Veloso</title>
-<meta name="description" content="Curso online de saúde e bem-estar com a Dra. Juliana Veloso. Aulas em vídeo, materiais e acesso imediato.">
+<title>Isso Tem Nome: Diagnóstico Tardio de TDAH e Autismo | Dra. Juliana Veloso</title>
+<meta name="description" content="Curso online para mulheres adultas que querem entender o diagnóstico tardio de TDAH e autismo. Com a Dra. Juliana Veloso, médica com pós-graduação em psiquiatria.">
 <style>
   :root{
-    --bg:#fbf8f5; --ink:#2a2230; --muted:#6b6275; --brand:#7a3e65; --brand-d:#5d2d4c;
-    --accent:#c9a46a; --card:#ffffff; --line:#eadfe6;
+    --olive:#5C6B4F; --olive-d:#475440; --gold:#C9A96E; --cream:#F5F0E8; --ink:#2b2f26; --muted:#6a6f60; --line:#e3dbc9;
   }
   *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;font-size:17px}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
   section{padding:64px 0}
-  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 16px}
-  h1{font-size:clamp(2rem,5vw,3.2rem)}
-  h2{font-size:clamp(1.6rem,3.5vw,2.2rem);text-align:center}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.25;margin:0 0 16px;font-weight:600}
+  h1{font-size:clamp(2rem,5vw,3.1rem)}
+  h2{font-size:clamp(1.6rem,3.5vw,2.2rem);text-align:center;color:var(--olive-d)}
   p{margin:0 0 16px}
-  .btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;padding:16px 32px;border-radius:999px;transition:.2s}
-  .btn:hover{background:var(--brand-d);transform:translateY(-2px)}
-  .hero{padding:80px 0;text-align:center;background:linear-gradient(180deg,#f3e8ef,var(--bg))}
-  .tag{display:inline-block;color:var(--brand);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;margin-bottom:12px}
-  .hero p.sub{font-size:1.2rem;color:var(--muted);max-width:640px;margin:0 auto 28px}
-  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
-  .card h3{font-size:1.15rem}
-  .num{color:var(--accent);font-weight:700;font-size:.9rem}
+  .btn{display:inline-block;background:var(--gold);color:#2b2f26;text-decoration:none;font-weight:700;padding:16px 34px;border-radius:999px;transition:.2s}
+  .btn:hover{background:#b9955a;transform:translateY(-2px)}
+  .hero{background:var(--olive);color:var(--cream);text-align:center;padding:84px 0}
+  .hero h1{color:var(--cream)}
+  .hero .sub{font-size:1.15rem;max-width:660px;margin:0 auto 28px;opacity:.92}
+  .tag{display:inline-block;color:var(--gold);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem;margin-bottom:14px}
+  .small{font-size:.88rem;opacity:.8;margin-top:14px}
+  .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+  .card h3{font-size:1.1rem;color:var(--olive-d)}
+  .card p{margin:0;color:var(--muted);font-size:.97rem}
+  .num{color:var(--gold);font-weight:700;font-size:.8rem;letter-spacing:.1em}
+  .alt{background:#ece5d6}
+  .quote{max-width:700px;margin:0 auto;text-align:center;font-family:Georgia,serif;font-size:1.35rem;color:var(--olive-d)}
   .about{display:grid;gap:32px;grid-template-columns:1fr;align-items:center}
   @media(min-width:760px){.about{grid-template-columns:280px 1fr}}
-  .photo{aspect-ratio:1;border-radius:20px;background:#e6d6e0;display:flex;align-items:center;justify-content:center;color:var(--muted);text-align:center;padding:16px}
-  .price-box{max-width:460px;margin:0 auto;text-align:center;background:var(--card);border:2px solid var(--brand);border-radius:20px;padding:32px}
-  .price{font-size:2.6rem;font-weight:800;color:var(--brand);margin:8px 0}
-  .old{text-decoration:line-through;color:var(--muted)}
-  .price-box ul{list-style:none;padding:0;margin:20px 0;text-align:left}
-  .price-box li{padding:6px 0 6px 28px;position:relative}
-  .price-box li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:700}
-  details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px}
-  summary{cursor:pointer;font-weight:600}
+  .photo{aspect-ratio:1;border-radius:20px;background:var(--olive);color:var(--cream);display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;font-size:.9rem}
+  .offer{max-width:520px;margin:0 auto;text-align:center;background:#fff;border:2px solid var(--gold);border-radius:20px;padding:32px}
+  .offer ul{list-style:none;padding:0;margin:20px 0;text-align:left}
+  .offer li{padding:6px 0 6px 28px;position:relative}
+  .offer li::before{content:"✓";position:absolute;left:0;color:var(--olive);font-weight:700}
+  details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px}
+  summary{cursor:pointer;font-weight:600;color:var(--olive-d)}
   details p{margin:12px 0 0;color:var(--muted)}
   footer{padding:32px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
-  .note{background:#fff7e0;border:1px dashed var(--accent);padding:12px 16px;border-radius:8px;font-size:.85rem;margin:0 0 24px}
-  .alt{background:#f6eef3}
+  .text{max-width:700px;margin:0 auto}
 </style>
 </head>
 <body>
 
-<!-- EDITE: troque todos os textos entre [COLCHETES] pelo conteúdo real do seu curso. -->
-<!-- EDITE: troque LINK_DO_CHECKOUT pelo link do produto na Hotmart/Kiwify/Eduzz. -->
+<!-- EDITE: troque LINK_DO_CHECKOUT pelo link do produto na Hotmart/Kiwify/Eduzz (3 botões). -->
+<!-- EDITE: itens entre [COLCHETES] precisam do seu dado real (foto, quantidade de aulas, prazo de acesso, contato). -->
 
 <header class="hero">
   <div class="wrap">
-    <span class="tag">Curso online com a Dra. Juliana Veloso</span>
-    <h1>[Nome do curso: promessa clara em uma frase]</h1>
-    <p class="sub">[Para quem é e qual transformação ele entrega. Ex.: entender [tema] com clareza, passo a passo, no seu ritmo.]</p>
-    <a class="btn" href="LINK_DO_CHECKOUT">Quero me inscrever</a>
-    <p style="margin-top:14px;font-size:.9rem;color:var(--muted)">Acesso imediato · Garantia de 7 dias</p>
+    <span class="tag">Isso Tem Nome · Curso online</span>
+    <h1>Diagnóstico tardio de TDAH e autismo em mulheres: entenda o que viveu até aqui</h1>
+    <p class="sub">Um curso da Dra. Juliana Veloso para mulheres adultas que passaram anos se esforçando mais que os outros, sem saber por quê, e agora querem entender o próprio funcionamento com calma e critério.</p>
+    <a class="btn" href="LINK_DO_CHECKOUT">Quero entender meu funcionamento</a>
+    <p class="small">Acesso imediato · Garantia de 7 dias</p>
   </div>
 </header>
 
 <section>
-  <div class="wrap">
-    <h2>Este curso é para você se...</h2>
-    <div class="grid">
-      <div class="card"><h3>[Situação 1]</h3><p>[Dor ou dúvida comum do seu público.]</p></div>
-      <div class="card"><h3>[Situação 2]</h3><p>[Dor ou dúvida comum do seu público.]</p></div>
-      <div class="card"><h3>[Situação 3]</h3><p>[Dor ou dúvida comum do seu público.]</p></div>
-    </div>
+  <div class="wrap text">
+    <p>Você sempre deu conta. Entregou o trabalho, cuidou da casa, sustentou a imagem de quem está bem. E mesmo assim chegava ao fim do dia esgotada, com a sensação de que tudo custava mais para você do que para as outras pessoas.</p>
+    <p>Muitas mulheres crescem assim, desenvolvendo estratégias para compensar e esconder as dificuldades, e só descobrem que existe uma explicação na vida adulta, depois de um burnout, da maternidade, de ver um filho ser avaliado ou de uma crise que não passa. Isso tem nome, tem explicação e tem caminho.</p>
+    <p>Este curso foi feito para quem está nessa fase de buscar respostas, e quer informação séria, sem rótulo apressado e sem culpa.</p>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap">
-    <h2>O que você vai aprender</h2>
-    <div class="grid">
-      <div class="card"><span class="num">MÓDULO 1</span><h3>[Título do módulo]</h3><p>[O que a pessoa sai sabendo.]</p></div>
-      <div class="card"><span class="num">MÓDULO 2</span><h3>[Título do módulo]</h3><p>[O que a pessoa sai sabendo.]</p></div>
-      <div class="card"><span class="num">MÓDULO 3</span><h3>[Título do módulo]</h3><p>[O que a pessoa sai sabendo.]</p></div>
-      <div class="card"><span class="num">MÓDULO 4</span><h3>[Título do módulo]</h3><p>[O que a pessoa sai sabendo.]</p></div>
+    <h2>O que você vai levar do curso</h2>
+    <div class="grid" style="margin-top:28px">
+      <div class="card"><h3>Clareza sobre o seu histórico</h3><p>Entender por que TDAH e autismo passam despercebidos em tantas meninas e mulheres, e como o mascaramento esconde as dificuldades por anos.</p></div>
+      <div class="card"><h3>Um mapa da avaliação</h3><p>Saber como é uma investigação diagnóstica criteriosa, o que esperar das consultas e como se preparar para elas.</p></div>
+      <div class="card"><h3>Menos culpa</h3><p>Reler a própria história com mais compreensão e menos cobrança, incluindo o luto que costuma vir com um diagnóstico na vida adulta.</p></div>
+      <div class="card"><h3>Estratégias para o dia a dia</h3><p>Ferramentas práticas para rotina, trabalho, sono, sobrecarga sensorial e relacionamentos.</p></div>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Conteúdo do curso</h2>
+    <div class="grid" style="margin-top:28px">
+      <div class="card"><span class="num">MÓDULO 1</span><h3>Por que ninguém percebeu antes</h3><p>Mascaramento, compensação e o que a escola, a família e a medicina deixaram passar.</p></div>
+      <div class="card"><span class="num">MÓDULO 2</span><h3>TDAH e autismo na mulher adulta</h3><p>Como se apresentam, onde se parecem, onde se diferenciam e o que costuma ser confundido com ansiedade e depressão.</p></div>
+      <div class="card"><span class="num">MÓDULO 3</span><h3>Como funciona uma avaliação séria</h3><p>Histórico de vida, sono, saúde física, exames e acompanhamento ao longo do tempo. Por que um bom diagnóstico não sai de um teste de internet.</p></div>
+      <div class="card"><span class="num">MÓDULO 4</span><h3>Depois da resposta</h3><p>Luto, alívio, reorganização da identidade e como contar para família e trabalho.</p></div>
+      <div class="card"><span class="num">MÓDULO 5</span><h3>Tratamento e os pilares da rotina</h3><p>Medicação como um dos pilares, ao lado de terapia, sono, atividade física, alimentação e ajustes no ambiente.</p></div>
+      <div class="card"><span class="num">MÓDULO 6</span><h3>Viver com mais autonomia</h3><p>Estratégias sustentáveis para trabalho, maternidade, relacionamentos e descanso de verdade.</p></div>
+    </div>
+    <p style="text-align:center;margin-top:20px;color:var(--muted)">[X] aulas em vídeo · Material de apoio em PDF · Acesso por [prazo]</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="quote">“A medicina me ensinou a investigar. Minha própria história me ensinou a compreender.”</p>
+    <p style="text-align:center;margin-top:12px;color:var(--muted)">Dra. Juliana Veloso</p>
   </div>
 </section>
 
@@ -87,44 +107,59 @@
     <div class="photo">[Coloque aqui a sua foto]</div>
     <div>
       <h2 style="text-align:left">Quem ensina</h2>
-      <p><strong>Dra. Juliana Veloso</strong>, médica. [Resumo curto da sua formação e experiência, com registro profissional (CRM) se quiser exibir.]</p>
-      <p>[Por que você criou este curso.]</p>
+      <p><strong>Dra. Juliana Veloso</strong>, médica com pós-graduação em psiquiatria, formada pela Universidade de Buenos Aires, com foco em saúde mental feminina e neurodivergência. Professora de Medicina e criadora do canal Isso Tem Nome.</p>
+      <p>Ela mesma recebeu o diagnóstico de TDAH já adulta, e leva essa vivência para a forma como investiga e explica cada caso, com escuta atenta e acompanhamento ao longo do tempo.</p>
+      <p style="color:var(--muted);font-size:.9rem">CRM-BA 43.109</p>
     </div>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap">
-    <h2>Investimento</h2>
-    <div class="price-box">
-      <span class="old">De R$ [valor cheio]</span>
-      <div class="price">R$ [valor]</div>
-      <p style="color:var(--muted)">ou [12x de R$ valor] no cartão</p>
-      <ul>
-        <li>[X] aulas em vídeo</li>
-        <li>Material de apoio em PDF</li>
-        <li>Acesso por [tempo]</li>
-        <li>Garantia incondicional de 7 dias</li>
-      </ul>
-      <a class="btn" href="LINK_DO_CHECKOUT">Garantir minha vaga</a>
+    <h2>Para quem é</h2>
+    <div class="grid" style="margin-top:28px">
+      <div class="card"><h3>Quem está em busca de respostas</h3><p>Mulheres que se identificam com relatos de TDAH ou autismo e querem entender como é o caminho de uma avaliação.</p></div>
+      <div class="card"><h3>Quem já tem o diagnóstico</h3><p>Quem recebeu a resposta na vida adulta e quer organizar o que isso significa na prática.</p></div>
+      <div class="card"><h3>Quem convive com alguém</h3><p>Mães, parceiros e familiares que querem compreender melhor uma mulher neurodivergente.</p></div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
+    <h2>Comece hoje</h2>
+    <div class="offer" style="margin-top:28px">
+      <h3>Isso Tem Nome: Diagnóstico Tardio</h3>
+      <ul>
+        <li>[X] aulas em vídeo, no seu ritmo</li>
+        <li>Material de apoio em PDF</li>
+        <li>Acesso por [prazo]</li>
+        <li>Garantia incondicional de 7 dias</li>
+      </ul>
+      <a class="btn" href="LINK_DO_CHECKOUT">Garantir minha vaga</a>
+      <p class="small" style="color:var(--muted)">Condições e formas de pagamento na página de checkout.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap text">
     <h2>Perguntas frequentes</h2>
+    <div style="margin-top:28px">
+    <details><summary>O curso vai me dar um diagnóstico?</summary><p>Não. Diagnóstico só pode ser feito em avaliação clínica individual, com um profissional habilitado. O curso explica como esse processo funciona e ajuda você a chegar mais preparada a ele.</p></details>
+    <details><summary>Já tenho diagnóstico. O curso serve para mim?</summary><p>Sim. Os módulos 4, 5 e 6 foram pensados para quem quer organizar a vida depois da resposta.</p></details>
+    <details><summary>O curso substitui consulta ou tratamento?</summary><p>Não. O conteúdo é educativo e não substitui avaliação, diagnóstico ou tratamento individual.</p></details>
     <details><summary>Como recebo o acesso?</summary><p>Logo após a confirmação do pagamento você recebe um e-mail com o login da área de aulas.</p></details>
-    <details><summary>Por quanto tempo tenho acesso?</summary><p>[Defina: 12 meses, vitalício etc.]</p></details>
-    <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia: se não for para você, devolvemos o valor integral.</p></details>
-    <details><summary>Este curso substitui uma consulta médica?</summary><p>Não. O conteúdo é educativo e não substitui avaliação, diagnóstico ou tratamento individual com um profissional de saúde.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Se não fizer sentido para você, devolvemos o valor integral.</p></details>
+    </div>
+    <p style="text-align:center;margin-top:28px"><a class="btn" href="LINK_DO_CHECKOUT">Quero fazer o curso</a></p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <p>Conteúdo educativo. Não substitui consulta médica. Resultados variam de pessoa para pessoa.</p>
-    <p>© 2026 Dra. Juliana Veloso · [CNPJ] · [E-mail de contato] · <a href="#">Termos</a> · <a href="#">Privacidade</a></p>
+    <p>Conteúdo educativo, sem finalidade de diagnóstico. Não substitui consulta médica.</p>
+    <p>Dra. Juliana Veloso · Saúde Mental · CRM-BA 43.109 · [CNPJ] · [E-mail ou WhatsApp de contato]</p>
   </div>
 </footer>
 
