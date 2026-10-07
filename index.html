@@ -3,330 +3,151 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Isso Tem Nome | Dra. Juliana Veloso</title>
-<meta name="description" content="Responda 8 perguntas rápidas e descubra o nome científico de algo que você vive e nunca conseguiu explicar.">
-<meta property="og:title" content="Isso Tem Nome">
-<meta property="og:description" content="Descubra o nome do que você sente. 2 minutos, gratuito.">
+<title>Dra. Juliana Veloso | Saúde Mental</title>
+<meta name="description" content="Médica com pós-graduação em psiquiatria. Saúde mental feminina, TDAH em adultos, ansiedade e comportamento alimentar, com investigação cuidadosa antes de qualquer conclusão.">
+<meta property="og:title" content="Dra. Juliana Veloso | Saúde Mental">
+<meta property="og:description" content="Colocando em palavras o que nem sempre é fácil explicar.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Physician","name":"Dra. Juliana Veloso","description":"Médica com pós-graduação em psiquiatria. Saúde mental feminina.","identifier":"CRM-BA 43.109","telephone":"+55 71 98362-6500","sameAs":["https://instagram.com/drajulianavelosolopes"]}
+</script>
 <style>
 :root{
-  --olive:#5C6B4F; --olive-dark:#46533C; --gold:#C9A96E; --cream:#F5F0E8; --ink:#2B3024;
-  --card:#FBF8F2; --line:rgba(92,107,79,.22);
+  --olive:#5C6B4F; --olive-dark:#46533C; --gold:#C9A96E; --cream:#F5F0E8; --ink:#2B3024; --card:#FBF8F2;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%}
-body{
-  font-family:Georgia,"Times New Roman",serif; background:var(--olive); color:var(--cream);
-  min-height:100vh; min-height:100dvh; line-height:1.55; display:flex; flex-direction:column;
-}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Georgia,"Times New Roman",serif;background:var(--cream);color:var(--ink);line-height:1.6}
 .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-header{padding:20px 16px 0;text-align:center}
-.brand{font-size:12px;letter-spacing:.28em;color:var(--gold);text-transform:uppercase}
-.brand small{display:block;letter-spacing:.2em;opacity:.8;margin-top:2px;font-size:10px}
-main{flex:1;width:100%;max-width:560px;margin:0 auto;padding:24px 16px 32px;display:flex;flex-direction:column}
-.screen{display:none;animation:fade .5s ease both}
-.screen.on{display:block}
-@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-h1,h2{font-weight:normal;line-height:1.2}
-h1{font-size:clamp(30px,8vw,40px);color:var(--cream);margin:28px 0 16px}
-h1 em{color:var(--gold);font-style:italic}
-h2{font-size:clamp(22px,5.6vw,27px);margin-bottom:22px}
-p{margin-bottom:14px;font-size:18px}
-.lead{opacity:.92}
-.btn{
-  display:block;width:100%;border:0;border-radius:999px;padding:16px 22px;font-size:17px;cursor:pointer;
-  background:var(--gold);color:var(--ink);text-align:center;text-decoration:none;font-family:inherit;
-  transition:transform .15s ease, background .15s ease;
-}
-.btn:hover{background:#d6ba84}.btn:active{transform:scale(.98)}
-.btn.ghost{background:transparent;color:var(--cream);border:1px solid var(--gold);margin-top:12px}
-.meta{font-size:13px;opacity:.75;text-align:center;margin-top:14px}
-input[type=text]{
-  width:100%;padding:15px 18px;border-radius:14px;border:1px solid var(--gold);background:rgba(245,240,232,.08);
-  color:var(--cream);font-size:17px;margin:6px 0 18px;font-family:inherit;
-}
-input::placeholder{color:rgba(245,240,232,.55)}
-label{font-size:15px;opacity:.9}
-.progress{height:4px;background:rgba(245,240,232,.18);border-radius:4px;margin-bottom:26px;overflow:hidden}
-.progress i{display:block;height:100%;width:0;background:var(--gold);transition:width .4s ease}
-.opt{
-  display:block;width:100%;text-align:left;margin-bottom:11px;padding:15px 18px;border-radius:16px;font-size:17px;
-  background:rgba(245,240,232,.07);color:var(--cream);border:1px solid rgba(201,169,110,.45);cursor:pointer;font-family:inherit;
-  transition:background .15s ease, border-color .15s ease;
-}
-.opt:hover,.opt:focus-visible{background:rgba(201,169,110,.18);border-color:var(--gold);outline:none}
-.back{background:none;border:0;color:var(--cream);opacity:.7;font-size:14px;cursor:pointer;margin:6px 0 0;font-family:inherit}
-
-/* resultado */
-.step{background:var(--card);color:var(--ink);border-radius:20px;padding:22px 20px;margin-bottom:14px;border:1px solid var(--line)}
-.step .tag{font-family:-apple-system,Segoe UI,Roboto,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--olive);margin-bottom:8px;display:block}
-.step p:last-child{margin-bottom:0}
-.step p{font-size:17px}
-.reveal{
-  min-height:70vh;min-height:70dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
-}
-.reveal .big{font-size:clamp(34px,10vw,52px);color:var(--gold);font-style:italic;opacity:0;animation:fade 1.2s .9s ease forwards}
-.reveal .name{font-size:clamp(24px,7vw,34px);margin-top:18px;opacity:0;animation:fade 1.2s 2.4s ease forwards}
-.reveal .btn{margin-top:36px;opacity:0;animation:fade 1s 3.6s ease forwards}
-.nome-final{text-align:center;padding:26px 20px}
-.nome-final .nm{font-size:30px;color:var(--olive-dark);margin:6px 0 4px;font-style:italic}
-.cta{background:var(--olive-dark);border:1px solid var(--gold);border-radius:20px;padding:22px 20px;margin:20px 0 10px}
-.cta p{font-size:17px}
-.crisis{background:var(--card);color:var(--ink);border-radius:20px;padding:24px 20px}
-.crisis strong{color:var(--olive-dark)}
-footer{padding:0 16px 28px;text-align:center;font-size:12px;opacity:.7;max-width:560px;margin:0 auto;line-height:1.5}
+a{color:inherit}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:rgba(92,107,79,.96);backdrop-filter:blur(6px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.logo{color:var(--gold);letter-spacing:.24em;font-size:12px;text-transform:uppercase;text-decoration:none}
+nav a.cta-mini{font-size:13px;background:var(--gold);color:var(--ink);padding:9px 16px;border-radius:999px;text-decoration:none}
+.hero{background:var(--olive);color:var(--cream);padding:64px 0 72px;text-align:center}
+.hero small{color:var(--gold);letter-spacing:.24em;font-size:12px;text-transform:uppercase}
+.hero h1{font-weight:normal;font-size:clamp(32px,8vw,52px);line-height:1.15;margin:18px auto 20px;max-width:680px}
+.hero h1 em{color:var(--gold)}
+.hero p{font-size:19px;max-width:560px;margin:0 auto 30px;opacity:.93}
+.btn{display:inline-block;border-radius:999px;padding:16px 30px;font-size:17px;text-decoration:none;background:var(--gold);color:var(--ink);transition:background .15s}
+.btn:hover{background:#d6ba84}
+.btn.line{background:transparent;border:1px solid var(--gold);color:var(--cream);margin-left:10px}
+.btn.line.dark{color:var(--olive-dark)}
+section{padding:60px 0}
+h2{font-weight:normal;font-size:clamp(26px,6vw,34px);line-height:1.2;color:var(--olive-dark);margin-bottom:20px}
+section p{font-size:18px;margin-bottom:16px;max-width:680px}
+.tag{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--olive);margin-bottom:10px;display:block}
+.alt{background:var(--card);border-top:1px solid rgba(92,107,79,.15);border-bottom:1px solid rgba(92,107,79,.15)}
+.quiz-band{background:var(--olive-dark);color:var(--cream);text-align:center}
+.quiz-band h2{color:var(--cream)}
+.quiz-band p{margin-left:auto;margin-right:auto;opacity:.92}
+.grid{display:grid;gap:16px;grid-template-columns:1fr}
+.card{background:var(--cream);border:1px solid rgba(92,107,79,.22);border-radius:20px;padding:24px}
+.alt .card{background:#fff}
+.card h3{font-weight:normal;font-size:24px;color:var(--olive-dark);margin-bottom:4px}
+.card .sub{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--olive);margin-bottom:12px;display:block}
+.card p{font-size:17px}
+.steps{counter-reset:s;list-style:none;display:grid;gap:14px}
+.steps li{counter-increment:s;padding-left:46px;position:relative;font-size:18px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--olive);color:var(--cream);text-align:center;line-height:32px;font-size:15px;font-family:-apple-system,Segoe UI,sans-serif}
+.contact{text-align:center}
+.contact p{margin-left:auto;margin-right:auto}
+footer{background:var(--olive);color:var(--cream);text-align:center;padding:36px 20px 44px;font-size:13px;line-height:1.7}
 footer a{color:var(--gold)}
-@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-delay:0s!important}}
+footer .legal{max-width:600px;margin:14px auto 0;opacity:.8}
+@media (min-width:720px){.grid.two{grid-template-columns:1fr 1fr}.hero{padding:96px 0 104px}}
+@media (max-width:480px){.btn.line{margin:12px 0 0}}
 </style>
 </head>
 <body>
-<header>
-  <div class="brand sans">Dra. Juliana Veloso<small>Saúde Mental</small></div>
+
+<nav class="sans">
+  <div class="wrap">
+    <a class="logo" href="#topo">Dra. Juliana Veloso</a>
+    <a class="cta-mini" href="https://wa.me/5571983626500?text=Ol%C3%A1%2C%20Dra.%20Juliana.%20Vim%20pelo%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</nav>
+
+<header class="hero" id="topo">
+  <div class="wrap">
+    <small class="sans">Saúde Mental</small>
+    <h1>Pare de se culpar por coisas que <em>têm explicação.</em></h1>
+    <p>Sou médica com pós-graduação em psiquiatria. Ajudo mulheres a entenderem o próprio funcionamento antes de qualquer conclusão ou tratamento.</p>
+    <a class="btn" href="quiz/">Descobrir o nome do que eu sinto</a>
+    <a class="btn line sans" href="#programas">Conhecer os programas</a>
+  </div>
 </header>
 
-<main id="app" aria-live="polite">
+<section id="sobre">
+  <div class="wrap">
+    <span class="tag sans">Quem sou</span>
+    <h2>A medicina me ensinou a investigar. Minha própria história me ensinou a compreender.</h2>
+    <p>Sou a Dra. Juliana Veloso, médica formada pela Universidade de Buenos Aires, com pós-graduação em psiquiatria e experiência em docência. Meu trabalho é de escuta, investigação e acompanhamento ao longo do tempo.</p>
+    <p>Muitas mulheres chegam dizendo "eu não aguento mais me sentir assim". Antes de qualquer diagnóstico, eu quero entender a sua história, o seu sono, a sua alimentação, os seus exames e o contexto da sua vida.</p>
+    <p>Acredito que, quando você compreende como o seu cérebro funciona, deixa de lutar contra si mesma.</p>
+  </div>
+</section>
 
-  <!-- 1. Entrada -->
-  <section class="screen on" id="s-intro">
-    <h1>Existe algo que você vive e nunca conseguiu <em>explicar</em>?</h1>
-    <p class="lead">Responda 8 perguntas rápidas. No final, a experiência que mais aparece na sua rotina ganha uma explicação científica e um nome.</p>
-    <label class="sans" for="nome">Como você quer ser chamada? (opcional)</label>
-    <input type="text" id="nome" placeholder="Seu primeiro nome" autocomplete="given-name" maxlength="30">
-    <button class="btn" id="start">Começar</button>
-    <p class="meta sans">2 minutos. Gratuito. Não coletamos nenhum dado seu.</p>
-  </section>
+<section class="quiz-band">
+  <div class="wrap">
+    <span class="tag sans" style="color:var(--gold)">Isso tem nome</span>
+    <h2>Existe algo que você vive e nunca conseguiu explicar?</h2>
+    <p>Responda 8 perguntas rápidas e descubra o nome científico da experiência que mais aparece na sua rotina. É gratuito, leva 2 minutos e não guardamos nenhum dado seu.</p>
+    <a class="btn" href="quiz/">Fazer o quiz</a>
+  </div>
+</section>
 
-  <!-- 2. Perguntas -->
-  <section class="screen" id="s-quiz">
-    <div class="progress"><i id="bar"></i></div>
-    <h2 id="q"></h2>
-    <div id="opts"></div>
-    <button class="back sans" id="back" hidden>Voltar</button>
-  </section>
+<section id="como">
+  <div class="wrap">
+    <span class="tag sans">Como eu cuido</span>
+    <h2>Seis princípios que guiam cada consulta</h2>
+    <ol class="steps">
+      <li>Investigar antes de concluir. Nenhum diagnóstico só pelos sintomas.</li>
+      <li>Compreender antes de tratar. Você entende o que está acontecendo.</li>
+      <li>Cada paciente precisa de um caminho diferente, sem protocolos prontos.</li>
+      <li>A medicação é um dos pilares, junto com terapia, sono, alimentação e movimento.</li>
+      <li>O objetivo é a sua autonomia, e não a dependência da médica.</li>
+      <li>Mente e corpo se influenciam o tempo todo.</li>
+    </ol>
+  </div>
+</section>
 
-  <!-- 3. Triagem de cuidado -->
-  <section class="screen" id="s-care">
-    <div class="progress"><i style="width:100%"></i></div>
-    <h2>Uma última pergunta, só para cuidar de você.</h2>
-    <p class="lead">Nas últimas semanas, você pensou que seria melhor não estar aqui, ou em se machucar?</p>
-    <button class="opt" data-care="no">Não</button>
-    <button class="opt" data-care="yes">Sim, já pensei nisso</button>
-  </section>
-
-  <!-- acolhimento -->
-  <section class="screen" id="s-crisis">
-    <div class="crisis">
-      <h2 style="color:var(--olive-dark)">Obrigada por me contar isso.</h2>
-      <p>Você não precisa passar por isso sozinha, e isso merece atenção humana agora, antes de qualquer quiz.</p>
-      <p><strong>Ligue 188</strong> (CVV, gratuito, 24 horas) ou <strong>192</strong> (SAMU). Se estiver em perigo imediato, procure a emergência mais próxima ou alguém de confiança perto de você.</p>
-      <p>Quando se sentir pronta, você também pode falar com a Dra. Juliana.</p>
-      <a class="btn" id="wa-crisis" target="_blank" rel="noopener">Falar com a Dra. Juliana</a>
+<section class="alt" id="programas">
+  <div class="wrap">
+    <span class="tag sans">Programas</span>
+    <h2>Acompanhamento com começo, meio e direção</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>ESSÊNCIA</h3>
+        <span class="sub sans">12 semanas</span>
+        <p>Para mulheres que passaram anos com sintomas, diagnósticos inconclusivos ou tratamentos que nunca explicaram o que acontecia. Inclui consultas, acompanhamento contínuo, avaliação neuropsicológica e integração com psicóloga.</p>
+      </div>
+      <div class="card">
+        <h3>ÂNIMA</h3>
+        <span class="sub sans">Mente, corpo e alimentação</span>
+        <p>Para quem quer cuidar da relação com a comida e do peso sem sofrimento. Reúne psiquiatria, psicologia, nutrição e atividade física, com plano individual para cada mulher.</p>
+      </div>
     </div>
-  </section>
+    <p class="sans" style="font-size:14px;margin-top:20px;opacity:.75">Valores e condições são passados no atendimento, pelo WhatsApp.</p>
+  </div>
+</section>
 
-  <!-- 4. Suspense do nome -->
-  <section class="screen" id="s-reveal">
-    <div class="reveal">
-      <p class="sans" style="opacity:.8;font-size:14px;letter-spacing:.1em" id="rv-pre"></p>
-      <div class="big">Isso tem nome.</div>
-      <div class="name" id="rv-name"></div>
-      <button class="btn" id="rv-go">Entender o que isso significa</button>
-    </div>
-  </section>
-
-  <!-- 5. Resultado em 6 passos -->
-  <section class="screen" id="s-result">
-    <div id="steps"></div>
-    <div class="cta">
-      <p id="cta-text"></p>
-      <a class="btn" id="wa" target="_blank" rel="noopener">Quero conversar com a Dra. Juliana</a>
-      <button class="btn ghost" id="share">Enviar para uma amiga</button>
-    </div>
-    <p class="meta sans">Este conteúdo é informativo e não substitui avaliação médica. Não é diagnóstico.</p>
-  </section>
-</main>
+<section class="contact" id="contato">
+  <div class="wrap">
+    <span class="tag sans">Contato</span>
+    <h2>Vamos conversar?</h2>
+    <p>Chame no WhatsApp e conte, em poucas palavras, o que você gostaria de entender. A equipe responde com os próximos passos.</p>
+    <a class="btn" href="https://wa.me/5571983626500?text=Ol%C3%A1%2C%20Dra.%20Juliana.%20Vim%20pelo%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">Falar no WhatsApp</a>
+    <a class="btn line dark sans" href="https://instagram.com/drajulianavelosolopes" target="_blank" rel="noopener">@drajulianavelosolopes</a>
+  </div>
+</section>
 
 <footer class="sans">
-  Dra. Juliana Veloso, médica, Saúde Mental · CRM-BA 43.109<br>
-  <a href="https://instagram.com/drajulianavelosolopes" target="_blank" rel="noopener">@drajulianavelosolopes</a><br>
-  Em crise ou com pensamentos de se machucar, ligue 188 (CVV) ou 192 (SAMU).
+  <strong>Dra. Juliana Veloso</strong> · Médica, Saúde Mental · CRM-BA 43.109<br>
+  <a href="https://instagram.com/drajulianavelosolopes" target="_blank" rel="noopener">Instagram</a> · <a href="quiz/">Quiz Isso Tem Nome</a>
+  <p class="legal">Este site tem caráter informativo e não substitui consulta médica. Não oferecemos diagnóstico pela internet. Em crise ou com pensamentos de se machucar, ligue 188 (CVV) ou 192 (SAMU).</p>
 </footer>
 
-<script>
-(function(){
-  var WA = "5571983626500";
-  var IG = "https://instagram.com/drajulianavelosolopes";
-
-  // Cada resposta soma ponto em um território do Atlas da Mente.
-  // a = Atenção, e = Emoções, c = Corpo, r = Relações
-  var QUESTIONS = [
-    {q:"Qual cena parece mais com a sua semana?", o:[
-      ["Entro num cômodo e esqueço o que fui fazer.","a"],
-      ["Choro ou me irrito por algo que os outros achariam pequeno.","e"],
-      ["Descanso e continuo cansada.","c"],
-      ["Adio responder mensagens e depois vivo pedindo desculpas.","r"]]},
-    {q:"Quando você tem uma tarefa importante, o que costuma acontecer?", o:[
-      ["Demoro muito para começar, mesmo sabendo o que fazer.","a"],
-      ["Começo, mas fico me cobrando tanto que me desgasto.","e"],
-      ["Começo com energia e ela acaba antes do fim do dia.","c"],
-      ["Faço tudo, e ainda sinto que ninguém vê o tamanho disso.","r"]]},
-    {q:"À noite, deitada, sua mente costuma estar...", o:[
-      ["Pulando de assunto, sem conseguir fechar nenhum.","a"],
-      ["Repassando algo que eu disse ou fiz durante o dia.","e"],
-      ["Cansada, mas o corpo não desliga e eu acordo no meio da noite.","c"],
-      ["Montando a lista do que todo mundo vai precisar de mim amanhã.","r"]]},
-    {q:"Qual frase você já pensou sobre si mesma?", o:[
-      ["“Eu sou desorganizada.”","a"],
-      ["“Eu sou sensível demais.”","e"],
-      ["“Eu devia dar conta de mais.”","c"],
-      ["“Eu sempre estou atrasada com todo mundo.”","r"]]},
-    {q:"Depois de um dia cheio, o que mais pesa?", o:[
-      ["Perceber tudo o que ficou esquecido ou pela metade.","a"],
-      ["A culpa, mesmo quando eu fiz o que pude.","e"],
-      ["O corpo: tensão, fome fora de hora, sono ruim.","c"],
-      ["A sensação de que carreguei tudo sozinha.","r"]]},
-    {q:"Como você reage a uma crítica, mesmo gentil?", o:[
-      ["Fico sem reação e depois não lembro direito o que foi dito.","a"],
-      ["Sinto muito e levo comigo por dias.","e"],
-      ["Sinto no corpo: aperto, ou vontade de comer.","c"],
-      ["Passo a me desculpar por tudo, até pelo que não fiz.","r"]]},
-    {q:"O que você mais gostaria que alguém entendesse?", o:[
-      ["Que minha cabeça foi para outro lugar, sem falta de interesse.","a"],
-      ["Que eu sinto de verdade, e isso me custa energia.","e"],
-      ["Que meu cansaço não se resolve só com dormir.","c"],
-      ["Que dar conta de tudo também tem um custo.","r"]]},
-    {q:"Se algo mudasse na sua vida, você gostaria que fosse...", o:[
-      ["Ter a cabeça mais leve e organizada.","a"],
-      ["Me cobrar menos e sentir mais paz.","e"],
-      ["Ter energia e um corpo que me acompanhe.","c"],
-      ["Dividir o peso e parar de me desculpar tanto.","r"]]}
-  ];
-
-  // Território -> o nome (fenômeno), nunca um diagnóstico.
-  var RESULTS = {
-    a:{
-      nome:"Memória prospectiva",
-      territorio:"Atenção",
-      experiencia:"Você decide que vai fazer uma coisa, e no meio do caminho ela some. A mensagem que ia responder, o objeto que ia buscar, o compromisso que estava na ponta da língua.",
-      validacao:"Muita gente vive essa cena toda semana, e passa anos achando que é desatenção, preguiça ou falta de esforço.",
-      reenquadramento:"Talvez você tenha aprendido a ler isso como um defeito seu, uma falha de caráter. Será que é mesmo?",
-      explicacao:"O cérebro cria uma intenção e precisa segurá-la na memória de trabalho enquanto cuida de outras coisas. Cada interrupção, cada mudança de ambiente, cada nova demanda disputa esse mesmo espaço. Quando a atenção muda de lugar, a intenção perde prioridade e escapa. É o mesmo mecanismo por trás do efeito da porta, quando você entra no cômodo e esquece o motivo.",
-      esperanca:"Só de entender isso, muita gente deixa de pensar “tem algo errado comigo” e começa a organizar o dia de um jeito que protege a memória. Entender muda muita coisa."
-    },
-    e:{
-      nome:"Ruminação",
-      territorio:"Emoções",
-      experiencia:"A conversa já acabou, mas ela continua passando na sua cabeça. O que você disse, o que poderia ter dito, o que a pessoa deve ter pensado.",
-      validacao:"É uma experiência muito comum, e quase sempre vem com uma voz que diz que você exagera ou que devia superar mais rápido.",
-      reenquadramento:"Talvez você tenha aprendido que sentir muito é fraqueza. Mas existe outra leitura possível.",
-      explicacao:"Quando algo parece uma ameaça social, a amígdala sinaliza alerta e o córtex pré-frontal tenta resolver repassando a cena. Só que repassar não resolve, e o cérebro entra em loop, gastando energia sem chegar a nenhuma conclusão. Quanto mais cansado o corpo, mais difícil fica sair desse circuito.",
-      esperanca:"Quem percebe o loop começa a reconhecer a hora em que ele começa, e isso abre espaço para interromper. Entender muda muita coisa."
-    },
-    c:{
-      nome:"Fadiga cognitiva",
-      territorio:"Corpo",
-      experiencia:"Você dorme, descansa no fim de semana, e mesmo assim o cansaço volta. A cabeça pesa, decidir qualquer coisa custa, e o corpo pede açúcar ou silêncio.",
-      validacao:"Muita gente vive isso e escuta que é só cansaço da vida moderna, ou que é preciso ter mais disciplina.",
-      reenquadramento:"Talvez você tenha aprendido que descansar é recompensa e não necessidade. Será que o seu corpo concorda?",
-      explicacao:"Pensar, decidir, controlar impulsos e se adaptar gastam energia do cérebro, que consome uma fatia enorme do que o corpo produz. Quando o dia pede esforço mental constante, sem pausas de verdade, o controle executivo perde rendimento. O sono ruim, a tensão muscular e a fome emocional entram como sinais do mesmo desgaste.",
-      esperanca:"Quando o cansaço ganha explicação, a culpa diminui e fica mais fácil buscar ajuda e ajustar a rotina com cuidado. Entender muda muita coisa."
-    },
-    r:{
-      nome:"Carga mental",
-      territorio:"Relações",
-      experiencia:"Você lembra do aniversário, da consulta, do que falta na geladeira, do humor de cada pessoa da casa. E, mesmo assim, ainda pede desculpas por algo que atrasou.",
-      validacao:"Muitas mulheres vivem essa sobrecarga em silêncio, porque ela é invisível. Ninguém vê o planejamento, só o que ficou de fora.",
-      reenquadramento:"Talvez você tenha aprendido que dar conta de tudo é obrigação sua. Mas quem desenhou essa regra?",
-      explicacao:"Carga mental é o trabalho cognitivo de antecipar, planejar, lembrar e monitorar as necessidades de todo mundo. Ele ocupa a memória de trabalho o dia inteiro, mesmo sem nenhuma tarefa visível acontecendo. Com a atenção sempre dividida, sobra menos espaço para descansar, e a cobrança interna aumenta.",
-      esperanca:"Dar nome a esse peso é o primeiro passo para dividi-lo, e para você deixar de se ver como a pessoa que nunca é suficiente. Entender muda muita coisa."
-    }
-  };
-
-  var $ = function(id){return document.getElementById(id)};
-  var screens = ["s-intro","s-quiz","s-care","s-crisis","s-reveal","s-result"];
-  var state = {i:0, score:{a:0,e:0,c:0,r:0}, picks:[], nome:""};
-
-  function show(id){
-    screens.forEach(function(s){$(s).classList.toggle("on", s===id)});
-    window.scrollTo(0,0);
-  }
-  function wa(text){return "https://wa.me/"+WA+"?text="+encodeURIComponent(text)}
-  function saudacao(){return state.nome ? "Olá, Dra. Juliana, aqui é "+state.nome+". " : "Olá, Dra. Juliana. "}
-
-  function renderQ(){
-    var item = QUESTIONS[state.i];
-    $("bar").style.width = (state.i/ (QUESTIONS.length+1) *100)+"%";
-    $("q").textContent = item.q;
-    var box = $("opts"); box.innerHTML="";
-    item.o.forEach(function(opt){
-      var b = document.createElement("button");
-      b.className="opt"; b.type="button"; b.textContent=opt[0];
-      b.addEventListener("click", function(){ pick(opt[1]) });
-      box.appendChild(b);
-    });
-    $("back").hidden = state.i===0;
-  }
-  function pick(k){
-    state.score[k]++; state.picks.push(k);
-    state.i++;
-    if(state.i<QUESTIONS.length){ renderQ(); } else { show("s-care"); }
-  }
-  $("back").addEventListener("click", function(){
-    if(state.i===0) return;
-    state.i--; var k = state.picks.pop(); state.score[k]--; renderQ();
-  });
-
-  function winner(){
-    var order=["a","e","c","r"], best="a";
-    order.forEach(function(k){ if(state.score[k]>state.score[best]) best=k; });
-    return best;
-  }
-
-  function step(tag, text){
-    return '<div class="step"><span class="tag">'+tag+'</span><p>'+text+'</p></div>';
-  }
-  function renderResult(k){
-    var r = RESULTS[k];
-    var html = "";
-    html += step("1 · Experiência", r.experiencia);
-    html += step("2 · Validação", r.validacao);
-    html += step("3 · Reenquadramento", r.reenquadramento);
-    html += step("4 · A ciência", r.explicacao);
-    html += '<div class="step nome-final"><span class="tag">5 · O nome</span><p>Isso tem nome.</p><div class="nm">'+r.nome+'</div><p class="sans" style="font-size:13px;opacity:.7">Território do Atlas da Mente: '+r.territorio+'</p></div>';
-    html += step("6 · Esperança", r.esperanca);
-    $("steps").innerHTML = html;
-
-    var msg = saudacao()+"Fiz o quiz Isso Tem Nome e o meu resultado foi “"+r.nome+"”. Gostaria de conversar sobre isso.";
-    $("wa").href = wa(msg);
-    $("cta-text").textContent = (state.nome ? state.nome+", s" : "S")+"e você se reconheceu, saiba que isso é só o começo da conversa. Na consulta, a investigação vai bem além de um quiz, e olha a sua história inteira.";
-    $("share").onclick = function(){
-      var link = location.href.split("#")[0];
-      var text = "Fiz o quiz “Isso Tem Nome” da Dra. Juliana Veloso. Tem explicação para algo que eu vivo. Faz também:";
-      if(navigator.share){ navigator.share({title:"Isso Tem Nome", text:text, url:link}).catch(function(){}); }
-      else { window.open("https://wa.me/?text="+encodeURIComponent(text+" "+link), "_blank"); }
-    };
-  }
-
-  $("start").addEventListener("click", function(){
-    state.nome = $("nome").value.trim().split(/\s+/)[0] || "";
-    state.i=0; state.score={a:0,e:0,c:0,r:0}; state.picks=[];
-    renderQ(); show("s-quiz");
-  });
-
-  document.querySelectorAll("[data-care]").forEach(function(b){
-    b.addEventListener("click", function(){
-      if(b.getAttribute("data-care")==="yes"){
-        $("wa-crisis").href = wa(saudacao()+"Preciso conversar com você.");
-        show("s-crisis"); return;
-      }
-      var k = winner(); var r = RESULTS[k];
-      $("rv-pre").textContent = state.nome ? state.nome.toUpperCase()+", A EXPERIÊNCIA QUE MAIS APARECE EM VOCÊ" : "A EXPERIÊNCIA QUE MAIS APARECE EM VOCÊ";
-      $("rv-name").textContent = r.nome;
-      renderResult(k);
-      show("s-reveal");
-    });
-  });
-  $("rv-go").addEventListener("click", function(){ show("s-result"); });
-})();
-</script>
 </body>
 </html>
