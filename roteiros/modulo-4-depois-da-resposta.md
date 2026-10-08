@@ -10,7 +10,7 @@
 
 Você sai da consulta com um nome na mão. Esperava sentir alívio, e sentiu. Mas logo depois veio uma tristeza que você não sabia explicar.
 
-Se isso aconteceu com você, ou se você imagina que pode acontecer, saiba que essa mistura é muito comum. E isso tem nome: é o processo emocional que costuma acompanhar um diagnóstico tardio.
+Se isso aconteceu com você, ou se você imagina que pode acontecer, saiba que essa mistura é muito comum. Ela costuma acompanhar quem recebe um diagnóstico tardio, e vale entender o porquê.
 
 Vou descrever as emoções que as mulheres mais relatam, e a literatura clínica sobre diagnóstico em mulheres adultas reconhece várias delas.
 

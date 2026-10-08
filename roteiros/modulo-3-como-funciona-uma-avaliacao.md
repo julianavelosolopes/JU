@@ -12,7 +12,7 @@ Você finalmente marca a consulta. Na véspera, a cabeça fica inventando cenár
 
 O medo do desconhecido pesa mais quando a gente não sabe o que vai acontecer lá dentro. Então vamos abrir essa porta.
 
-Muita gente adia a avaliação porque não sabe o que vai acontecer lá dentro. Então vou te contar como costuma ser, de forma geral. Cada profissional tem o seu jeito, mas existem princípios que os consensos científicos recomendam.
+Vou te contar como costuma ser, de forma geral. Cada profissional tem o seu jeito, mas existem princípios que os consensos científicos recomendam.
 
 Primeiro, uma avaliação séria não é um teste de dez minutos. Ela é, antes de tudo, uma conversa longa e organizada sobre a sua vida.
 

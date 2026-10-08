@@ -56,9 +56,9 @@ Entender como a atenção funciona muda a forma como você se cobra. Porque ente
 
 Você sai de uma festa onde conversou com todo mundo, sorriu, fez as perguntas certas. No carro, o silêncio parece uma recompensa. E você precisa de um dia inteiro, quase sem falar com ninguém, para se recuperar.
 
-E antes de qualquer nome, vale entender o que existe por trás dessa cena.
+Essa cena tem muitas explicações possíveis, e uma delas é o autismo. Vamos ver o que a ciência diz sobre isso.
 
-Agora vamos falar de autismo, que a ciência chama de transtorno do espectro autista, ou TEA.
+O autismo é chamado pela ciência de transtorno do espectro autista, ou TEA.
 
 Espectro quer dizer que existe muita variação. Duas pessoas autistas podem ser muito diferentes entre si. Algumas precisam de bastante apoio no dia a dia, outras vivem de forma independente e têm uma vida profissional.
 
