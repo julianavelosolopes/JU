@@ -28,6 +28,8 @@ Algumas ideias práticas.
 
 **Cuidar do ambiente sensorial.** Fones, luz mais suave, roupas confortáveis. Para quem é mais sensível a estímulos, isso pode ser a diferença entre um dia suportável e um dia exaustivo.
 
+**Registrar para enxergar padrões.** Foi para isso que eu criei o Diário de Foco, que está nos materiais de apoio. Humor, ansiedade, energia e foco de zero a dez, em menos de um minuto por dia. Depois de algumas semanas você percebe o que atrapalha e o que ajuda, e os ajustes deixam de ser aleatórios. **[Conte aqui, com a sua voz, como você usa ou usou esse diário.]**
+
 **Pausas planejadas.** Descansar antes de ficar esgotada rende mais do que descansar depois.
 
 **[SUA HISTÓRIA. Conte duas ou três estratégias que funcionam de verdade para você, e uma que você tentou e não funcionou. Isso aproxima muito.]**

@@ -19,6 +19,12 @@
 9. **Divulgar com o canal.** Cada aula pode virar um reel e uma série no "Isso Tem Nome". Posso adaptar os roteiros para os episódios da Temporada 3 (TDAH) e da 4 (TEA).
 10. **Cuidados do CFM na divulgação.** Sem preço em post, sem promessa de resultado, sem antes e depois, sem depoimentos de pacientes sobre o curso. Termos e política de privacidade na página.
 
+## Materiais que você já tinha e entraram no curso
+- **Diário de Foco (TDAH), Diário Semanal do Sono e Planner Semanal:** aparecem na página como materiais de apoio e são citados nas aulas 5.2 e 6.1. Falta decidir o formato de entrega: PDF para baixar ou planilha para copiar.
+- **A Chave Mestra da Ansiedade (ebook):** ainda não coloquei na página. Decida se ele é bônus ou produto à parte. Como o curso tem muita ansiedade como comorbidade, ele combina bem como bônus.
+- **Planner Diário "Núbia Freitas":** tem o nome de outra pessoa na capa, então não usei. Se for um modelo personalizado, vale uma versão com o seu nome.
+- Todos esses materiais usam sua logo e "CRM-BA 43.109" e estão de acordo. Padronize sempre "médica" e "Saúde Mental".
+
 ## Pontos de atenção
 - Os roteiros descrevem sintomas e experiências, nunca sugerem diagnóstico.
 - Nunca fale de dose de medicação nas aulas.

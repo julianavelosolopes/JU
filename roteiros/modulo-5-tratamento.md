@@ -52,7 +52,7 @@ Você toma o remédio direitinho, mas continua dormindo quatro horas por noite, 
 
 Muitas vezes o que falta não é o remédio, é o resto. Vamos falar dele.
 
-**Sono.** Problemas de sono são muito comuns em adultos com TDAH, e dormir mal piora quase todos os sintomas: atenção, memória, humor. Uma revisão sobre o assunto descreve essa relação como bidirecional. Por isso, quando uma mulher chega com dificuldade de atenção, uma das primeiras perguntas é como ela dorme. Dicas básicas: horários regulares, telas longe da cama, luz do dia pela manhã, cuidado com cafeína à tarde. Se o problema persistir, vale investigar com o médico, porque apneia e outros problemas podem estar por trás.
+**Sono.** Problemas de sono são muito comuns em adultos com TDAH, e dormir mal piora quase todos os sintomas: atenção, memória, humor. Uma revisão sobre o assunto descreve essa relação como bidirecional. Por isso, quando uma mulher chega com dificuldade de atenção, uma das primeiras perguntas é como ela dorme. Dicas básicas: horários regulares, telas longe da cama, luz do dia pela manhã, cuidado com cafeína à tarde. Se o problema persistir, vale investigar com o médico, porque apneia e outros problemas podem estar por trás. Nos materiais de apoio do curso você tem o Diário Semanal do Sono: preencha uma semana e leve para a consulta, porque dados reais ajudam muito mais do que a memória.
 
 **Movimento.** Atividade física faz bem ao humor, ao sono e à energia, e muitas pessoas com TDAH relatam que ajuda no dia a dia. A evidência de que ela reduza os sintomas centrais do TDAH em adultos é mais modesta do que a evidência da medicação, então ela entra como aliada, não como substituta.
 
