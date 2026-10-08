@@ -74,12 +74,18 @@ const ASSETS=[
 ];
 const API="https://api.coingecko.com/api/v3";
 const $=id=>document.getElementById(id);
-const D={}; let G=null,FNG=null,sel="BTC",range=365,mk={};
+let FAILED=[];const D={}; let G=null,FNG=null,sel="BTC",range=365,mk={};
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function jf(u,ttl=600000){
   const key="pc:"+u;
   try{const c=JSON.parse(localStorage.getItem(key));if(c&&Date.now()-c.t<ttl)return c.d}catch(e){}
-  const r=await fetch(u);if(!r.ok)throw new Error(r.status);
+  let r;
+  for(let t=0;t<4;t++){
+    r=await fetch(u);
+    if(r.status!==429)break;
+    await sleep(10000*(t+1));
+  }
+  if(!r.ok)throw new Error(r.status);
   const d=await r.json();
   try{localStorage.setItem(key,JSON.stringify({t:Date.now(),d}))}catch(e){}
   return d;
@@ -210,9 +216,10 @@ function renderMarket(){
    <div class="card"><div class="label">Dólar em reais</div><div class="val">${mk.fx?"R$ "+num(mk.fx):"–"}</div><div class="sub">Implícito pela cotação do BTC.</div></div>`;
 }
 function renderCmp(){
-  const rows=ASSETS.filter(a=>D[a.k]?.m).map(a=>{
+  const rows=ASSETS.map(a=>{
+    if(!D[a.k]?.m)return `<tr><td><b>${a.k}</b> <span class="sub">${a.name}</span></td><td colspan="12" style="text-align:left" class="sub">${FAILED.includes(a.k)?"Indisponível agora (limite da API). Recarregue em 1 min.":"Carregando…"}</td></tr>`;
     const m=D[a.k].m,h=horizon(a,m,FNG),r=riskOf(a,m);
-    const vd=x=>`<span class="pill" style="background:${verdictOf(x.s).c}">${verdictOf(x.s).v.split(" ")[0]}</span>`;
+    const vd=x=>`<span class="pill" style="background:${verdictOf(x.s).c}">${verdictOf(x.s).v.replace("NEUTRO: OBSERVAR","NEUTRO").replace("PERMANECER / ACUMULAR","ACUMULAR").replace("REDUZIR POSIÇÃO","REDUZIR").replace("SAIR / PROTEGER","SAIR")}</span>`;
     return `<tr><td><b>${a.k}</b> <span class="sub">${a.name}</span></td><td>${brl(m.last)}</td><td>${pct(D[a.k].c24)}</td><td>${pct(m.c7)}</td><td>${pct(m.c30)}</td><td>${pct(m.c365)}</td><td>${num(m.rsi,0)}</td><td>${num(m.vol30,0)}%</td><td>${pct(m.ddNow,0)}</td><td>${vd(h.short)}</td><td>${vd(h.mid)}</td><td>${vd(h.long)}</td><td><span class="pill" style="background:${r.c}">${r.t}</span></td></tr>`}).join("");
   $("cmp").innerHTML=`<tr><th>Ativo</th><th>Preço</th><th>24h</th><th>7d</th><th>30d</th><th>1a</th><th>RSI</th><th>Volat.</th><th>vs máx.</th><th>Curto</th><th>Médio</th><th>Longo</th><th>Risco</th></tr>${rows}`;
 }
@@ -224,7 +231,7 @@ function card(h){
 }
 function renderDetail(){
   const A=ASSETS.find(a=>a.k===sel),d=D[A.k];
-  if(!d?.m){$("detail").innerHTML='<div class="card">Carregando dados…</div>';return}
+  if(!d?.m){$("detail").innerHTML=`<div class="card">${FAILED.includes(A.k)?"Não foi possível carregar "+A.name+" agora (limite da API gratuita). Recarregue a página em 1 minuto.":"Carregando dados…"}</div>`;return}
   const m=d.m,h=horizon(A,m,FNG),r=riskOf(A,m);
   const stop=Math.min(m.last*(1-Math.max(0.08,Math.min(0.35,2*m.dailyVol/100*Math.sqrt(7)))),m.lo30*0.97);
   const stopPct=(stop/m.last-1)*100;
@@ -291,16 +298,19 @@ async function load(){
   try{G=await jf(`${API}/global`)}catch(e){err++}
   try{const u=await jf(`${API}/simple/price?ids=bitcoin&vs_currencies=usd,brl`);mk.fx=u.bitcoin.brl/u.bitcoin.usd}catch(e){err++}
   renderMarket();
+  const failed=[];
   for(const a of ASSETS){
+    $("status").textContent=`Carregando ${a.k}…`;
     try{
       const c=await jf(`${API}/coins/${a.id}/market_chart?vs_currency=brl&days=365&interval=daily`);
-      D[a.k]=Object.assign(D[a.k]||{},{prices:c.prices.map(x=>x[1]).filter(x=>x>0)});
-    }catch(e){err++}
-    await sleep(1200);
+      const d=D[a.k]=Object.assign(D[a.k]||{},{prices:c.prices.map(x=>x[1]).filter(x=>x>0)});
+      if(d.price)d.prices[d.prices.length-1]=d.price;
+      d.m=analyze(Object.assign({k:a.k},d));
+    }catch(e){err++;failed.push(a.k)}
+    renderCmp();renderDetail();
+    await sleep(2500);
   }
-  // BTC primeiro (correlação)
-  for(const a of ASSETS){const d=D[a.k];if(d?.prices&&d.price){d.prices[d.prices.length-1]=d.price;d.k=a.k;d.m=analyze(Object.assign({k:a.k},d))}}
-  renderCmp();renderTabs();renderDetail();
+  FAILED=failed;renderCmp();renderDetail();
   $("status").textContent=err?`Atualizado às ${new Date().toLocaleTimeString("pt-BR")} (alguns dados falharam: limite da API gratuita; recarregue em 1 min).`:`Atualizado às ${new Date().toLocaleTimeString("pt-BR")}. Renova a cada 10 min.`;
 }
 renderTabs();load();setInterval(load,600000);
