@@ -125,7 +125,7 @@ Use o seu método do "Isso Tem Nome": cada post começa por uma cena do cotidian
 
 **Próxima semana**
 4. `[ ]` Criar a conta na Hotmart ou Kiwify e cadastrar os dois produtos (curso e ebook).
-5. `[ ]` Me mandar: foto, logo em boa resolução, quantidade de aulas, prazo de acesso, CNPJ e contato.
+5. `[ ]` Me mandar: foto, logo em boa resolução, quantidade de aulas, prazo de acesso e contato.
 6. `[ ]` Começar a gravar pelas aulas 0.1 e 5.1.
 
 **Nas semanas seguintes**
