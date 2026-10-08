@@ -2,7 +2,7 @@
 
 ## O que já está pronto
 - `index.html`: página de vendas, agora com a sua história pessoal na abertura.
-- `roteiros/`: 15 roteiros de aula (Módulos 0 a 6) seguindo o método dos 8 passos do "Isso Tem Nome".
+- `roteiros/`: 14 roteiros de aula (Módulos 0 a 6) seguindo o método dos 8 passos do "Isso Tem Nome".
 - `roteiros/referencias.md`: bibliografia e mapa de fontes por aula.
 - `modelo-generico.html`: modelo em branco para futuros cursos.
 

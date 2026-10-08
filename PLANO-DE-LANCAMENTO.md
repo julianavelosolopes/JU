@@ -15,7 +15,7 @@ Pense numa escada. A pessoa começa de graça, depois compra algo pequeno, depoi
 | **1. Isca grátis** | Diário de Foco, versão simples (1 página, para copiar) | WhatsApp ou formulário, em troca do contato | Quem te segue no Instagram | `[ ]` simplificar o material |
 | **1. Isca grátis** | Aula-amostra: a aula 1.1 "A mulher que sempre deu conta" | Reel de 60 s e vídeo completo no YouTube ou Instagram | Qualquer pessoa | `[ ]` gravar |
 | **2. Entrada (valor baixo)** | **A Chave Mestra da Ansiedade** (ebook, 43 páginas) | Hotmart ou Kiwify, produto separado | Quem ainda não está pronta para o curso | `[ ]` criar o produto |
-| **3. Principal** | **Curso Isso Tem Nome: Diagnóstico Tardio** (15 aulas) | Hotmart ou Kiwify | Quem quer entender e se preparar para a avaliação | `[ ]` gravar e criar o produto |
+| **3. Principal** | **Curso Isso Tem Nome: Diagnóstico Tardio** (14 aulas) | Hotmart ou Kiwify | Quem quer entender e se preparar para a avaliação | `[ ]` gravar e criar o produto |
 | **3. Bônus do curso** | Diário de Foco completo, Diário Semanal do Sono, Planner Semanal, PDF de apoio por módulo | Área de membros, junto do curso | Quem comprar o curso | `[ ]` transformar em PDF |
 | **3. Oferta extra no checkout** | A Chave Mestra da Ansiedade | Aparece na tela de pagamento do curso ("quer levar também?") | Quem está comprando o curso | `[ ]` ativar na plataforma |
 | **4. Mais tarde** | Kit de diários (Foco + Sono + Planner) vendido sozinho | Produto separado | Quem quer só as ferramentas | `[ ]` só depois que o curso validar |
@@ -31,7 +31,7 @@ Pense numa escada. A pessoa começa de graça, depois compra algo pequeno, depoi
 
 ## 2. O que gravar
 
-### 2.1 As 15 aulas (roteiros prontos na pasta `roteiros/`)
+### 2.1 As 14 aulas (roteiros prontos na pasta `roteiros/`)
 Ordem sugerida de gravação, das mais importantes para as mais simples:
 
 1. `[ ]` **Aula 0.1** Oi, eu sou a Juliana (3 a 4 min). Tem a sua história.
