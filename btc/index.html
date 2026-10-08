@@ -4,97 +4,306 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Painel BTC</title>
+<title>Painel Cripto: BTC, SOL, ORCA, JUP</title>
 <style>
-:root{--olive:#5C6B4F;--olive-dark:#46533C;--gold:#C9A96E;--cream:#F5F0E8;--ink:#2B3024;--card:#FBF8F2;--up:#2f7d4f;--down:#b04a3a}
+:root{--olive:#5C6B4F;--olive-dark:#46533C;--gold:#C9A96E;--cream:#F5F0E8;--ink:#2B3024;--card:#FBF8F2;--up:#2f7d4f;--down:#b04a3a;--warn:#b8860b;--line:rgba(92,107,79,.22)}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.5}
-.wrap{max-width:880px;margin:0 auto;padding:0 20px}
-header{background:var(--olive);color:var(--cream);padding:28px 0}
-header h1{font-family:Georgia,serif;font-weight:normal;font-size:26px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.5;font-size:15px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+header{background:var(--olive);color:var(--cream);padding:22px 0}
 header small{color:var(--gold);letter-spacing:.2em;font-size:12px;text-transform:uppercase}
-main{padding:24px 0 48px}
-.grid{display:grid;gap:14px;grid-template-columns:1fr 1fr}
-.card{background:var(--card);border:1px solid rgba(92,107,79,.22);border-radius:16px;padding:18px}
-.card.big{grid-column:1/-1}
-.label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--olive)}
-.val{font-family:Georgia,serif;font-size:26px;color:var(--olive-dark);margin-top:4px;font-variant-numeric:tabular-nums}
-.big .val{font-size:clamp(34px,9vw,52px)}
-.up{color:var(--up)}.down{color:var(--down)}
-svg{width:100%;height:150px;margin-top:10px;display:block}
-.bar{display:flex;gap:6px;margin:0 0 14px}
-.bar button{flex:1;padding:9px;border:1px solid var(--olive);background:transparent;color:var(--olive-dark);border-radius:999px;font-size:14px;cursor:pointer}
-.bar button.on{background:var(--olive);color:var(--cream)}
-.calc{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:8px}
-.calc input{padding:10px;border:1px solid rgba(92,107,79,.4);border-radius:10px;font-size:16px;width:140px;background:#fff}
-footer{font-size:12px;opacity:.7;text-align:center;padding-bottom:30px}
-@media(max-width:480px){.grid{grid-template-columns:1fr}}
+header h1{font-family:Georgia,serif;font-weight:normal;font-size:26px}
+main{padding:20px 0 40px}
+h2{font-family:Georgia,serif;font-weight:normal;font-size:20px;color:var(--olive-dark);margin:26px 0 10px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive)}
+.val{font-family:Georgia,serif;font-size:22px;color:var(--olive-dark);margin-top:2px;font-variant-numeric:tabular-nums}
+.sub{font-size:12px;opacity:.75;margin-top:2px}
+.up{color:var(--up)}.down{color:var(--down)}.warn{color:var(--warn)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.tabs button,.rng button{padding:9px 16px;border:1px solid var(--olive);background:transparent;color:var(--olive-dark);border-radius:999px;font-size:14px;cursor:pointer}
+.tabs button.on,.rng button.on{background:var(--olive);color:var(--cream)}
+.rng{display:flex;gap:6px;margin:6px 0}.rng button{padding:5px 12px;font-size:12px}
+table{width:100%;border-collapse:collapse;font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+th,td{padding:9px 8px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--olive)}
+.scroll{overflow-x:auto}
+svg{width:100%;height:230px;display:block}
+.verdict{border-left:6px solid var(--olive);}
+.verdict .big{font-family:Georgia,serif;font-size:21px;margin:4px 0}
+.verdict ul{list-style:none;font-size:13px;margin-top:6px}
+.verdict li{padding:2px 0 2px 16px;position:relative}
+.verdict li::before{content:"•";position:absolute;left:2px}
+.meter{height:8px;border-radius:99px;background:linear-gradient(90deg,#b04a3a,#d9b44a,#2f7d4f);position:relative;margin:8px 0}
+.meter i{position:absolute;top:-4px;width:4px;height:16px;background:var(--ink);border-radius:2px;transform:translateX(-2px)}
+.pill{display:inline-block;padding:2px 10px;border-radius:99px;font-size:12px;color:#fff}
+.legend{font-size:12px;display:flex;gap:14px;flex-wrap:wrap;margin-top:4px}
+.legend b{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:4px}
+.plan td,.plan th{text-align:left;white-space:normal}
+.note{font-size:12px;opacity:.8;margin-top:6px}
+.disc{background:#fff6e0;border:1px solid #e3c878;border-radius:12px;padding:12px;font-size:13px;margin-top:22px}
+#status{font-size:12px;opacity:.7;margin-top:12px}
 </style>
 </head>
 <body>
-<header><div class="wrap"><small>Painel</small><h1>Bitcoin (BTC)</h1></div></header>
+<header><div class="wrap"><small>Painel</small><h1>Cripto: BTC · SOL · ORCA · JUP</h1></div></header>
 <main class="wrap">
-  <div class="bar" id="range">
-    <button data-d="1" class="on">24h</button><button data-d="7">7d</button><button data-d="30">30d</button><button data-d="365">1a</button>
-  </div>
-  <div class="grid">
-    <div class="card big">
-      <div class="label">Preço em BRL</div>
-      <div class="val" id="brl">…</div>
-      <div id="chg" class="label" style="margin-top:6px"></div>
-      <svg id="chart" viewBox="0 0 600 150" preserveAspectRatio="none"></svg>
-    </div>
-    <div class="card"><div class="label">Preço em USD</div><div class="val" id="usd">…</div></div>
-    <div class="card"><div class="label">Dólar (BRL/USD)</div><div class="val" id="fx">…</div></div>
-    <div class="card"><div class="label">Máx / mín do período</div><div class="val" id="hl" style="font-size:19px">…</div></div>
-    <div class="card"><div class="label">Valor de mercado</div><div class="val" id="mc" style="font-size:19px">…</div></div>
-    <div class="card big">
-      <div class="label">Calculadora</div>
-      <div class="calc">
-        <input id="inBrl" type="number" min="0" placeholder="R$" inputmode="decimal">
-        <span>=</span><span class="val" id="outBtc" style="margin:0;font-size:20px">0 BTC</span>
-      </div>
-    </div>
-  </div>
-  <p id="status" class="label" style="margin-top:16px"></p>
+
+<h2 style="margin-top:0">Mercado</h2>
+<div class="grid" id="mkt"></div>
+
+<h2>Comparativo</h2>
+<div class="scroll"><table id="cmp"></table></div>
+
+<h2>Análise detalhada</h2>
+<div class="tabs" id="tabs"></div>
+<div id="detail"></div>
+
+<div class="disc"><b>Aviso:</b> este painel calcula indicadores técnicos a partir de preços públicos (CoinGecko, alternative.me) e traduz em sinais automáticos. Não é recomendação de investimento, não conhece sua situação financeira e não prevê o futuro. Nunca invista valor que não possa perder, defina o tamanho da posição antes e decida por você.</div>
+<p id="status"></p>
 </main>
-<footer>Dados: CoinGecko. Informativo, não é recomendação de investimento.</footer>
+
 <script>
+const ASSETS=[
+ {k:"BTC",id:"bitcoin",name:"Bitcoin",cls:"Reserva de valor",sec:{lvl:1,items:["Rede mais antiga e testada, sem contratos inteligentes complexos.","Risco principal: custódia. Prefira carteira própria (hardware) e guarde a frase de recuperação offline.","Risco regulatório e de corretora (exchange) continuam existindo."]}},
+ {k:"SOL",id:"solana",name:"Solana",cls:"Camada 1",sec:{lvl:2,items:["Rede já teve quedas e instabilidades (2021-2024); disponibilidade melhorou, mas o histórico existe.","Poucos validadores concentram boa parte do stake; acompanhe a descentralização.","Risco de carteira: golpes de aprovação/assinatura. Use carteira separada para DeFi."]}},
+ {k:"ORCA",id:"orca",name:"Orca",cls:"DEX na Solana",sec:{lvl:3,items:["Token de protocolo DeFi: depende da segurança dos contratos e da adoção do DEX.","Liquidez muito menor que BTC/SOL: a saída em queda forte pode custar caro (slippage).","Risco extra de rede: se a Solana falhar, o protocolo falha junto."]}},
+ {k:"JUP",id:"jupiter-exchange-solana",name:"Jupiter",cls:"Agregador DEX na Solana",sec:{lvl:3,items:["Protocolo DeFi com vários produtos (swap, perpétuos): superfície de ataque maior.","Token com calendário de desbloqueios (unlocks): oferta nova pode pressionar o preço.","Cuidado com sites falsos e airdrops falsos; confira sempre o endereço oficial."]}}
+];
 const API="https://api.coingecko.com/api/v3";
 const $=id=>document.getElementById(id);
-const fmt=(n,c)=>n.toLocaleString("pt-BR",{style:"currency",currency:c,maximumFractionDigits:c==="BRL"||c==="USD"?0:2});
-let price=0,days=1;
-async function j(u){const r=await fetch(u);if(!r.ok)throw new Error(r.status);return r.json()}
+const D={}; let G=null,FNG=null,sel="BTC",range=365,mk={};
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+async function jf(u,ttl=600000){
+  const key="pc:"+u;
+  try{const c=JSON.parse(localStorage.getItem(key));if(c&&Date.now()-c.t<ttl)return c.d}catch(e){}
+  const r=await fetch(u);if(!r.ok)throw new Error(r.status);
+  const d=await r.json();
+  try{localStorage.setItem(key,JSON.stringify({t:Date.now(),d}))}catch(e){}
+  return d;
+}
+const brl=(n,d=2)=>isFinite(n)?n.toLocaleString("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:n<10?4:d}):"–";
+const num=(n,d=2)=>isFinite(n)?n.toLocaleString("pt-BR",{maximumFractionDigits:d,minimumFractionDigits:d}):"–";
+const pct=(n,d=1)=>isFinite(n)?`<span class="${n>=0?"up":"down"}">${n>=0?"▲":"▼"} ${num(Math.abs(n),d)}%</span>`:"–";
+const big=n=>!isFinite(n)?"–":n>=1e12?"R$ "+num(n/1e12)+" tri":n>=1e9?"R$ "+num(n/1e9)+" bi":"R$ "+num(n/1e6)+" mi";
+
+/* ---------- indicadores ---------- */
+const sma=(a,n)=>a.length<n?NaN:a.slice(-n).reduce((s,x)=>s+x,0)/n;
+function emaSeries(a,n){const k=2/(n+1);const o=[a[0]];for(let i=1;i<a.length;i++)o.push(a[i]*k+o[i-1]*(1-k));return o}
+function smaSeries(a,n){return a.map((_,i)=>i<n-1?null:a.slice(i-n+1,i+1).reduce((s,x)=>s+x,0)/n)}
+function rsi(a,n=14){if(a.length<n+1)return NaN;let g=0,l=0;for(let i=1;i<=n;i++){const d=a[i]-a[i-1];d>0?g+=d:l-=d}g/=n;l/=n;
+ for(let i=n+1;i<a.length;i++){const d=a[i]-a[i-1];g=(g*(n-1)+Math.max(d,0))/n;l=(l*(n-1)+Math.max(-d,0))/n}return l===0?100:100-100/(1+g/l)}
+function macd(a){const e12=emaSeries(a,12),e26=emaSeries(a,26),m=e12.map((v,i)=>v-e26[i]),s=emaSeries(m,9);const i=a.length-1;return{hist:m[i]-s[i],prev:m[i-1]-s[i-1]}}
+const rets=a=>a.slice(1).map((v,i)=>Math.log(v/a[i]));
+const sd=a=>{const m=a.reduce((s,x)=>s+x,0)/a.length;return Math.sqrt(a.reduce((s,x)=>s+(x-m)**2,0)/(a.length-1))};
+function maxDD(a){let pk=a[0],dd=0;for(const v of a){pk=Math.max(pk,v);dd=Math.min(dd,v/pk-1)}return dd*100}
+function corr(x,y){const n=Math.min(x.length,y.length);x=x.slice(-n);y=y.slice(-n);const mx=x.reduce((s,v)=>s+v,0)/n,my=y.reduce((s,v)=>s+v,0)/n;
+ let c=0,a=0,b=0;for(let i=0;i<n;i++){c+=(x[i]-mx)*(y[i]-my);a+=(x[i]-mx)**2;b+=(y[i]-my)**2}return c/Math.sqrt(a*b)}
+const chg=(a,d)=>a.length>d?(a[a.length-1]/a[a.length-1-d]-1)*100:NaN;
+
+function analyze(A){
+  const p=A.prices,last=p[p.length-1],r=rets(p);
+  const m={last};
+  m.rsi=rsi(p);m.sma20=sma(p,20);m.sma50=sma(p,50);m.sma200=sma(p,200);
+  m.macd=macd(p);
+  m.c7=chg(p,7);m.c30=chg(p,30);m.c90=chg(p,90);m.c365=chg(p,p.length-1>=365?365:p.length-1);
+  m.vol30=sd(r.slice(-30))*Math.sqrt(365)*100;
+  m.vol90=sd(r.slice(-90))*Math.sqrt(365)*100;
+  m.dd=maxDD(p);
+  m.ddNow=(last/Math.max(...p)-1)*100;
+  m.hi=Math.max(...p);m.lo=Math.min(...p);
+  m.lo30=Math.min(...p.slice(-30));m.hi30=Math.max(...p.slice(-30));
+  m.dailyVol=sd(r.slice(-30))*100;
+  const mu=r.slice(-90).reduce((s,x)=>s+x,0)/90;m.sharpe=sd(r.slice(-90))?mu*365/(sd(r.slice(-90))*Math.sqrt(365)):NaN;
+  m.corr=A.k==="BTC"?1:corr(r.slice(-90),rets(D.BTC.prices).slice(-90));
+  m.volRatio=A.mc?A.vol24/A.mc:NaN;
+  m.athDist=A.ath?(last/A.ath-1)*100:NaN;
+  const cross=m.sma50>m.sma200;m.cross=isFinite(m.sma200)?(cross?"Cruz dourada (SMA50 > SMA200)":"Cruz da morte (SMA50 < SMA200)"):"Sem dados suficientes";
+  m.p=p;return m;
+}
+
+/* ---------- decisões ---------- */
+function clamp(x){return Math.max(-100,Math.min(100,x))}
+function verdictOf(s,risk){
+  let v,c;
+  if(s>=45){v="PERMANECER / ACUMULAR";c="#2f7d4f"}
+  else if(s>=15){v="PERMANECER";c="#6b9a4c"}
+  else if(s>-15){v="NEUTRO: OBSERVAR";c="#b8860b"}
+  else if(s>-45){v="REDUZIR POSIÇÃO";c="#c8742f"}
+  else{v="SAIR / PROTEGER";c="#b04a3a"}
+  return{v,c};
+}
+function horizon(A,m,fng){
+  const out={};
+  // CURTO (dias a semanas)
+  {let s=0;const w=[];
+   if(m.rsi>=75){s-=35;w.push(`RSI ${num(m.rsi,0)}: sobrecomprado, risco de correção`)}
+   else if(m.rsi>=65){s-=10;w.push(`RSI ${num(m.rsi,0)}: esticado`)}
+   else if(m.rsi<=25){s+=25;w.push(`RSI ${num(m.rsi,0)}: sobrevendido, possível repique (mas pode piorar)`)}
+   else if(m.rsi<=35){s+=10;w.push(`RSI ${num(m.rsi,0)}: perto de sobrevenda`)}
+   else w.push(`RSI ${num(m.rsi,0)}: zona neutra`);
+   if(m.last>m.sma20){s+=20;w.push("Preço acima da média de 20 dias")}else{s-=20;w.push("Preço abaixo da média de 20 dias")}
+   if(m.macd.hist>0){s+=15;w.push("MACD positivo")}else{s-=15;w.push("MACD negativo")}
+   if(m.macd.hist>m.macd.prev){s+=10;w.push("Momento (MACD) melhorando")}else{s-=10;w.push("Momento (MACD) piorando")}
+   if(m.c7>0){s+=10}else{s-=10}w.push(`Variação 7 dias: ${num(m.c7)}%`);
+   if(fng!=null){if(fng>=80){s-=15;w.push(`Ganância extrema no mercado (${fng}): cautela`)}else if(fng<=20){s+=10;w.push(`Medo extremo no mercado (${fng}): historicamente zona de oportunidade, porém volátil`)}}
+   out.short={s:clamp(s),w,label:"Curto prazo (dias a semanas)"};}
+  // MÉDIO (1 a 6 meses)
+  {let s=0;const w=[];
+   if(m.last>m.sma50){s+=30;w.push("Preço acima da média de 50 dias")}else{s-=30;w.push("Preço abaixo da média de 50 dias")}
+   if(isFinite(m.sma200)){if(m.sma50>m.sma200){s+=20;w.push("Cruz dourada ativa (tendência de alta)")}else{s-=20;w.push("Cruz da morte ativa (tendência de baixa)")}}
+   if(m.c30>10){s+=15}else if(m.c30<-10){s-=15}w.push(`Variação 30 dias: ${num(m.c30)}%`);
+   if(m.c90>15){s+=20}else if(m.c90<-15){s-=20}w.push(`Variação 90 dias: ${num(m.c90)}%`);
+   if(m.last<m.lo30*1.03){s-=15;w.push("Preço colado na mínima de 30 dias: suporte em teste")}
+   if(m.sharpe>1){s+=10;w.push("Retorno ajustado ao risco (90d) bom")}else if(m.sharpe<-1){s-=10;w.push("Retorno ajustado ao risco (90d) ruim")}
+   out.mid={s:clamp(s),w,label:"Médio prazo (1 a 6 meses)"};}
+  // LONGO (1 ano+)
+  {let s=0;const w=[];
+   if(isFinite(m.sma200)){if(m.last>m.sma200){s+=35;w.push("Preço acima da média de 200 dias")}else{s-=35;w.push("Preço abaixo da média de 200 dias")}}
+   if(m.c365>50){s+=20}else if(m.c365>0){s+=8}else if(m.c365<-30){s-=25}else{s-=10}w.push(`Variação 1 ano: ${num(m.c365)}%`);
+   if(m.ddNow<-70){s-=20;w.push(`${num(m.ddNow,0)}% abaixo da máxima de 1 ano: deterioração profunda`)}
+   else if(m.ddNow<-40){s-=5;w.push(`${num(m.ddNow,0)}% abaixo da máxima de 1 ano: desconto grande, mas exige tese`)}
+   else w.push(`${num(m.ddNow,0)}% da máxima de 1 ano`);
+   if(isFinite(m.athDist)){w.push(`${num(m.athDist,0)}% em relação à máxima histórica`);if(m.athDist<-80)s-=15}
+   if(A.k==="BTC"){s+=20;w.push("Ativo de maior liquidez e histórico do setor")}
+   else if(A.k==="SOL"){s+=8;w.push("Camada 1 estabelecida, com ecossistema ativo")}
+   else{s-=10;w.push("Token de protocolo menor: risco de adoção e de oferta")}
+   out.long={s:clamp(s),w,label:"Longo prazo (1 ano ou mais)"};}
+  return out;
+}
+function riskOf(A,m){
+  let pts=0;const w=[];
+  const v=m.vol30;
+  if(v>110){pts+=3;w.push(`Volatilidade anualizada muito alta (${num(v,0)}%)`)}else if(v>70){pts+=2;w.push(`Volatilidade alta (${num(v,0)}%)`)}else{pts+=1;w.push(`Volatilidade moderada (${num(v,0)}%)`)}
+  if(m.dd<-70){pts+=3;w.push(`Queda máxima no ano de ${num(m.dd,0)}%`)}else if(m.dd<-45){pts+=2;w.push(`Queda máxima no ano de ${num(m.dd,0)}%`)}else{pts+=1;w.push(`Queda máxima no ano de ${num(m.dd,0)}%`)}
+  if(m.volRatio<0.03){pts+=2;w.push("Pouca liquidez diária relativa ao valor de mercado")}else w.push(`Giro diário/valor de mercado: ${num(m.volRatio*100)}%`);
+  pts+=A.sec.lvl-1;w.push(`Risco de segurança/protocolo: ${["","baixo","médio","alto"][A.sec.lvl]}`);
+  w.push(`Correlação com BTC (90d): ${num(m.corr)}`);
+  const lvl=pts<=5?{t:"BAIXO",c:"#2f7d4f",max:"até 30-50% da parte cripto"}:pts<=8?{t:"MÉDIO",c:"#b8860b",max:"até 15-25% da parte cripto"}:{t:"ALTO",c:"#b04a3a",max:"até 5-10% da parte cripto"};
+  return{...lvl,pts,w};
+}
+
+/* ---------- gráfico ---------- */
+function chart(m,days){
+  const p=m.p,n=Math.min(days,p.length),sub=p.slice(-n);
+  const s50=smaSeries(p,50).slice(-n),s200=smaSeries(p,200).slice(-n);
+  const all=[...sub,...s50.filter(x=>x),...s200.filter(x=>x)];
+  const mn=Math.min(...all),mx=Math.max(...all),W=700,H=230,pad=6;
+  const X=i=>i/(n-1)*W,Y=v=>H-pad-(v-mn)/(mx-mn||1)*(H-2*pad);
+  const line=(a,c,w)=>{const pts=a.map((v,i)=>v==null?null:`${X(i).toFixed(1)},${Y(v).toFixed(1)}`).filter(Boolean).join(" ");return pts?`<polyline fill="none" stroke="${c}" stroke-width="${w}" vector-effect="non-scaling-stroke" points="${pts}"/>`:""};
+  const up=sub[n-1]>=sub[0];
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">${line(s200,"#b04a3a",1.5)}${line(s50,"#C9A96E",1.5)}${line(sub,up?"#2f7d4f":"#b04a3a",2.2)}</svg>
+  <div class="legend"><span><b style="background:${up?"#2f7d4f":"#b04a3a"}"></b>Preço</span><span><b style="background:#C9A96E"></b>Média 50d</span><span><b style="background:#b04a3a"></b>Média 200d</span></div>`;
+}
+
+/* ---------- render ---------- */
+function renderMarket(){
+  const f=FNG,d=G?.data;
+  const fl=f==null?"–":f<=25?"Medo extremo":f<=45?"Medo":f<=55?"Neutro":f<=75?"Ganância":"Ganância extrema";
+  $("mkt").innerHTML=`
+   <div class="card"><div class="label">Medo &amp; Ganância</div><div class="val">${f??"–"} <span style="font-size:14px">${fl}</span></div>
+     <div class="meter"><i style="left:${f??50}%"></i></div><div class="sub">Abaixo de 25 costuma indicar pânico; acima de 75, euforia.</div></div>
+   <div class="card"><div class="label">Dominância do BTC</div><div class="val">${d?num(d.market_cap_percentage.btc)+"%":"–"}</div><div class="sub">Alta = dinheiro buscando segurança; queda = apetite por altcoins.</div></div>
+   <div class="card"><div class="label">Mercado cripto total</div><div class="val" style="font-size:19px">${d?"US$ "+num(d.total_market_cap.usd/1e12)+" tri":"–"}</div><div class="sub">24h: ${d?pct(d.market_cap_change_percentage_24h_usd):"–"}</div></div>
+   <div class="card"><div class="label">Dólar em reais</div><div class="val">${mk.fx?"R$ "+num(mk.fx):"–"}</div><div class="sub">Implícito pela cotação do BTC.</div></div>`;
+}
+function renderCmp(){
+  const rows=ASSETS.filter(a=>D[a.k]?.m).map(a=>{
+    const m=D[a.k].m,h=horizon(a,m,FNG),r=riskOf(a,m);
+    const vd=x=>`<span class="pill" style="background:${verdictOf(x.s).c}">${verdictOf(x.s).v.split(" ")[0]}</span>`;
+    return `<tr><td><b>${a.k}</b> <span class="sub">${a.name}</span></td><td>${brl(m.last)}</td><td>${pct(D[a.k].c24)}</td><td>${pct(m.c7)}</td><td>${pct(m.c30)}</td><td>${pct(m.c365)}</td><td>${num(m.rsi,0)}</td><td>${num(m.vol30,0)}%</td><td>${pct(m.ddNow,0)}</td><td>${vd(h.short)}</td><td>${vd(h.mid)}</td><td>${vd(h.long)}</td><td><span class="pill" style="background:${r.c}">${r.t}</span></td></tr>`}).join("");
+  $("cmp").innerHTML=`<tr><th>Ativo</th><th>Preço</th><th>24h</th><th>7d</th><th>30d</th><th>1a</th><th>RSI</th><th>Volat.</th><th>vs máx.</th><th>Curto</th><th>Médio</th><th>Longo</th><th>Risco</th></tr>${rows}`;
+}
+function card(h){
+  const v=verdictOf(h.s),pos=(h.s+100)/2;
+  return `<div class="card verdict" style="border-left-color:${v.c}"><div class="label">${h.label}</div>
+   <div class="big" style="color:${v.c}">${v.v}</div><div class="meter"><i style="left:${pos}%"></i></div>
+   <div class="sub">Pontuação ${h.s>0?"+":""}${Math.round(h.s)} (de -100 a +100)</div><ul>${h.w.map(x=>`<li>${x}</li>`).join("")}</ul></div>`;
+}
+function renderDetail(){
+  const A=ASSETS.find(a=>a.k===sel),d=D[A.k];
+  if(!d?.m){$("detail").innerHTML='<div class="card">Carregando dados…</div>';return}
+  const m=d.m,h=horizon(A,m,FNG),r=riskOf(A,m);
+  const stop=Math.max(m.lo30*0.97,m.last-2.5*m.dailyVol/100*m.last*Math.sqrt(7));
+  const stopPct=(stop/m.last-1)*100;
+  const tgt1=m.hi30,tgt2=m.hi;
+  const dayRisk=m.dailyVol;
+  $("detail").innerHTML=`
+  <div class="grid">
+    <div class="card"><div class="label">${A.name} (${A.k})</div><div class="val">${brl(m.last)}</div><div class="sub">${pct(d.c24)} em 24h · ${A.cls}</div></div>
+    <div class="card"><div class="label">Valor de mercado</div><div class="val" style="font-size:18px">${big(d.mc)}</div><div class="sub">Volume 24h: ${big(d.vol24)}</div></div>
+    <div class="card"><div class="label">Máxima histórica</div><div class="val" style="font-size:18px">${brl(d.ath)}</div><div class="sub">${pct(m.athDist,0)} do topo</div></div>
+    <div class="card"><div class="label">Tendência</div><div class="val" style="font-size:15px">${m.cross}</div><div class="sub">SMA50 ${brl(m.sma50,0)} · SMA200 ${brl(m.sma200,0)}</div></div>
+  </div>
+  <div class="card" style="margin-top:12px"><div class="rng">${[[30,"30d"],[90,"90d"],[180,"6m"],[365,"1a"]].map(([d,l])=>`<button data-r="${d}" class="${range==d?"on":""}">${l}</button>`).join("")}</div>${chart(m,range)}</div>
+
+  <h2>Indicadores</h2>
+  <div class="grid">
+    <div class="card"><div class="label">RSI (14)</div><div class="val">${num(m.rsi,0)}</div><div class="sub">&gt;70 sobrecomprado · &lt;30 sobrevendido</div></div>
+    <div class="card"><div class="label">MACD</div><div class="val" style="font-size:18px">${m.macd.hist>0?"Positivo":"Negativo"}</div><div class="sub">${m.macd.hist>m.macd.prev?"Momento melhorando":"Momento piorando"}</div></div>
+    <div class="card"><div class="label">Volatilidade 30d / 90d</div><div class="val" style="font-size:18px">${num(m.vol30,0)}% / ${num(m.vol90,0)}%</div><div class="sub">Anualizada. Oscilação diária típica: ±${num(m.dailyVol)}%</div></div>
+    <div class="card"><div class="label">Queda máx. no ano</div><div class="val">${num(m.dd,0)}%</div><div class="sub">Agora ${num(m.ddNow,0)}% da máxima</div></div>
+    <div class="card"><div class="label">Sharpe (90d)</div><div class="val">${num(m.sharpe)}</div><div class="sub">&gt;1 bom · &lt;0 retorno não paga o risco</div></div>
+    <div class="card"><div class="label">Correlação com BTC</div><div class="val">${num(m.corr)}</div><div class="sub">Perto de 1 = não diversifica</div></div>
+    <div class="card"><div class="label">Liquidez (vol/mcap)</div><div class="val">${num(m.volRatio*100)}%</div><div class="sub">Baixo = saída mais cara</div></div>
+    <div class="card"><div class="label">Variações</div><div class="sub" style="font-size:13px;opacity:1">7d ${pct(m.c7)}<br>30d ${pct(m.c30)}<br>90d ${pct(m.c90)}<br>1a ${pct(m.c365)}</div></div>
+  </div>
+
+  <h2>Decisão: sair ou permanecer</h2>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">${card(h.short)}${card(h.mid)}${card(h.long)}</div>
+
+  <h2>Risco e segurança</h2>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+   <div class="card verdict" style="border-left-color:${r.c}"><div class="label">Nível de risco</div><div class="big" style="color:${r.c}">${r.t}</div>
+     <div class="sub">Sugestão de tamanho: ${r.max}</div><ul>${r.w.map(x=>`<li>${x}</li>`).join("")}</ul></div>
+   <div class="card verdict" style="border-left-color:${["","#2f7d4f","#b8860b","#b04a3a"][A.sec.lvl]}"><div class="label">Segurança (rede, contrato e custódia)</div><ul>${A.sec.items.map(x=>`<li>${x}</li>`).join("")}</ul>
+     <div class="note">Regras gerais: ative 2FA com app (não SMS), nunca compartilhe a frase de recuperação, desconfie de links e DMs, teste com valor pequeno antes de enviar.</div></div>
+  </div>
+
+  <h2>Plano de saída (nível de referência)</h2>
+  <div class="scroll"><table class="plan">
+   <tr><th>Gatilho</th><th>Nível</th><th>Ação a considerar</th></tr>
+   <tr><td>Stop de proteção (curto)</td><td>${brl(stop)} (${num(stopPct,1)}%)</td><td>Se perder esse nível, reduzir ou sair. Baseado na mínima de 30d e na volatilidade recente.</td></tr>
+   <tr><td>Perda da média de 50 dias</td><td>${brl(m.sma50)}</td><td>Fechamento diário abaixo: reduzir parte da posição (médio prazo enfraquece).</td></tr>
+   <tr><td>Perda da média de 200 dias</td><td>${brl(m.sma200)}</td><td>Fechamento abaixo: sinal de mudança de tendência de longo prazo; reavaliar a tese.</td></tr>
+   <tr><td>Realização parcial 1</td><td>${brl(tgt1)}</td><td>Máxima de 30 dias. Realizar 25-33% se RSI &gt; 70.</td></tr>
+   <tr><td>Realização parcial 2</td><td>${brl(tgt2)}</td><td>Máxima de 1 ano. Realizar mais uma parte e subir o stop do restante.</td></tr>
+  </table></div>
+  <p class="note">Regra prática: se a oscilação diária típica é ±${num(dayRisk)}%, arrisque no máximo 1-2% do patrimônio total por posição entre entrada e stop. Defina o plano antes de comprar, não durante o pânico.</p>`;
+  document.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{range=+b.dataset.r;renderDetail()});
+}
+function renderTabs(){
+  $("tabs").innerHTML=ASSETS.map(a=>`<button data-k="${a.k}" class="${sel===a.k?"on":""}">${a.k}</button>`).join("");
+  document.querySelectorAll("[data-k]").forEach(b=>b.onclick=()=>{sel=b.dataset.k;renderTabs();renderDetail()});
+}
+
+/* ---------- carga ---------- */
 async function load(){
+  $("status").textContent="Carregando dados…";
+  let err=0;
   try{
-    const [s,c]=await Promise.all([
-      j(`${API}/coins/markets?vs_currency=brl&ids=bitcoin&price_change_percentage=24h`),
-      j(`${API}/coins/bitcoin/market_chart?vs_currency=brl&days=${days}`)
-    ]);
-    const u=await j(`${API}/simple/price?ids=bitcoin&vs_currencies=usd,brl`);
-    const m=s[0];price=m.current_price;
-    $("brl").textContent=fmt(price,"BRL");
-    $("usd").textContent=fmt(u.bitcoin.usd,"USD");
-    $("fx").textContent=(u.bitcoin.brl/u.bitcoin.usd).toFixed(2).replace(".",",");
-    $("mc").textContent="R$ "+(m.market_cap/1e12).toFixed(2).replace(".",",")+" tri";
-    const p=c.prices.map(x=>x[1]),first=p[0],last=p[p.length-1],pc=(last/first-1)*100;
-    $("chg").innerHTML=`<span class="${pc>=0?"up":"down"}">${pc>=0?"▲":"▼"} ${pc.toFixed(2).replace(".",",")}%</span> no período`;
-    $("hl").textContent=`${fmt(Math.max(...p),"BRL")} / ${fmt(Math.min(...p),"BRL")}`;
-    draw(p,pc>=0);calc();
-    $("status").textContent="Atualizado às "+new Date().toLocaleTimeString("pt-BR");
-  }catch(e){$("status").textContent="Não foi possível carregar os dados agora. Tentando de novo em 1 min."}
+    const ms=await jf(`${API}/coins/markets?vs_currency=brl&ids=${ASSETS.map(a=>a.id).join(",")}&price_change_percentage=24h`);
+    ms.forEach(x=>{const a=ASSETS.find(a=>a.id===x.id);D[a.k]=Object.assign(D[a.k]||{},{mc:x.market_cap,vol24:x.total_volume,ath:x.ath,c24:x.price_change_percentage_24h,price:x.current_price})});
+  }catch(e){err++}
+  try{FNG=+(await jf("https://api.alternative.me/fng/?limit=1")).data[0].value}catch(e){err++}
+  try{G=await jf(`${API}/global`)}catch(e){err++}
+  try{const u=await jf(`${API}/simple/price?ids=bitcoin&vs_currencies=usd,brl`);mk.fx=u.bitcoin.brl/u.bitcoin.usd}catch(e){err++}
+  renderMarket();
+  for(const a of ASSETS){
+    try{
+      const c=await jf(`${API}/coins/${a.id}/market_chart?vs_currency=brl&days=365&interval=daily`);
+      D[a.k]=Object.assign(D[a.k]||{},{prices:c.prices.map(x=>x[1]).filter(x=>x>0)});
+    }catch(e){err++}
+    await sleep(1200);
+  }
+  // BTC primeiro (correlação)
+  for(const a of ASSETS){const d=D[a.k];if(d?.prices&&d.price){d.prices[d.prices.length-1]=d.price;d.k=a.k;d.m=analyze(Object.assign({k:a.k},d))}}
+  renderCmp();renderTabs();renderDetail();
+  $("status").textContent=err?`Atualizado às ${new Date().toLocaleTimeString("pt-BR")} (alguns dados falharam: limite da API gratuita; recarregue em 1 min).`:`Atualizado às ${new Date().toLocaleTimeString("pt-BR")}. Renova a cada 10 min.`;
 }
-function draw(p,up){
-  const mn=Math.min(...p),mx=Math.max(...p),W=600,H=150;
-  const pts=p.map((v,i)=>`${(i/(p.length-1)*W).toFixed(1)},${(H-6-(v-mn)/(mx-mn||1)*(H-12)).toFixed(1)}`).join(" ");
-  const col=up?"#2f7d4f":"#b04a3a";
-  $("chart").innerHTML=`<polyline fill="none" stroke="${col}" stroke-width="2" vector-effect="non-scaling-stroke" points="${pts}"/>`;
-}
-function calc(){const v=parseFloat($("inBrl").value)||0;$("outBtc").textContent=(price?v/price:0).toFixed(8).replace(".",",")+" BTC"}
-$("inBrl").addEventListener("input",calc);
-$("range").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
-  document.querySelectorAll("#range button").forEach(x=>x.classList.toggle("on",x===b));days=b.dataset.d;load()});
-load();setInterval(load,60000);
+renderTabs();load();setInterval(load,600000);
 </script>
 </body>
 </html>
