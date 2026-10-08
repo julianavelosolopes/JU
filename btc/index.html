@@ -90,7 +90,7 @@ async function jf(u,ttl=600000){
   try{localStorage.setItem(key,JSON.stringify({t:Date.now(),d}))}catch(e){}
   return d;
 }
-const brl=(n,d=2)=>isFinite(n)?n.toLocaleString("en-US",{style:"currency",currency:"USD",minimumFractionDigits:n<1?4:n>=1000?0:2,maximumFractionDigits:n<1?4:n<10?3:n>=1000?0:d}):"–";
+const brl=(n,d=2)=>{if(!isFinite(n))return "–";const mx=n<1?4:n<10?3:n>=1000?0:d,mn=Math.min(mx,n<1?4:n>=1000?0:2);return n.toLocaleString("en-US",{style:"currency",currency:"USD",minimumFractionDigits:mn,maximumFractionDigits:mx})};
 const num=(n,d=2)=>isFinite(n)?n.toLocaleString("pt-BR",{maximumFractionDigits:d,minimumFractionDigits:d}):"–";
 const pct=(n,d=1)=>isFinite(n)?`<span class="${n>=0?"up":"down"}">${n>=0?"▲":"▼"} ${num(Math.abs(n),d)}%</span>`:"–";
 const big=n=>!isFinite(n)?"–":n>=1e12?"US$ "+num(n/1e12)+" tri":n>=1e9?"US$ "+num(n/1e9)+" bi":"US$ "+num(n/1e6)+" mi";
