@@ -90,10 +90,10 @@ async function jf(u,ttl=600000){
   try{localStorage.setItem(key,JSON.stringify({t:Date.now(),d}))}catch(e){}
   return d;
 }
-const brl=(n,d=2)=>isFinite(n)?n.toLocaleString("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:n<10?4:d}):"–";
+const brl=(n,d=2)=>isFinite(n)?n.toLocaleString("en-US",{style:"currency",currency:"USD",minimumFractionDigits:n<1?4:n>=1000?0:2,maximumFractionDigits:n<1?4:n<10?3:n>=1000?0:d}):"–";
 const num=(n,d=2)=>isFinite(n)?n.toLocaleString("pt-BR",{maximumFractionDigits:d,minimumFractionDigits:d}):"–";
 const pct=(n,d=1)=>isFinite(n)?`<span class="${n>=0?"up":"down"}">${n>=0?"▲":"▼"} ${num(Math.abs(n),d)}%</span>`:"–";
-const big=n=>!isFinite(n)?"–":n>=1e12?"R$ "+num(n/1e12)+" tri":n>=1e9?"R$ "+num(n/1e9)+" bi":"R$ "+num(n/1e6)+" mi";
+const big=n=>!isFinite(n)?"–":n>=1e12?"US$ "+num(n/1e12)+" tri":n>=1e9?"US$ "+num(n/1e9)+" bi":"US$ "+num(n/1e6)+" mi";
 
 /* ---------- indicadores ---------- */
 const sma=(a,n)=>a.length<n?NaN:a.slice(-n).reduce((s,x)=>s+x,0)/n;
@@ -291,7 +291,7 @@ async function load(){
   $("status").textContent="Carregando dados…";
   let err=0;
   try{
-    const ms=await jf(`${API}/coins/markets?vs_currency=brl&ids=${ASSETS.map(a=>a.id).join(",")}&price_change_percentage=24h`);
+    const ms=await jf(`${API}/coins/markets?vs_currency=usd&ids=${ASSETS.map(a=>a.id).join(",")}&price_change_percentage=24h`);
     ms.forEach(x=>{const a=ASSETS.find(a=>a.id===x.id);D[a.k]=Object.assign(D[a.k]||{},{mc:x.market_cap,vol24:x.total_volume,ath:x.ath,c24:x.price_change_percentage_24h,price:x.current_price})});
   }catch(e){err++}
   try{FNG=+(await jf("https://api.alternative.me/fng/?limit=1")).data[0].value}catch(e){err++}
@@ -302,7 +302,7 @@ async function load(){
   for(const a of ASSETS){
     $("status").textContent=`Carregando ${a.k}…`;
     try{
-      const c=await jf(`${API}/coins/${a.id}/market_chart?vs_currency=brl&days=365&interval=daily`);
+      const c=await jf(`${API}/coins/${a.id}/market_chart?vs_currency=usd&days=365&interval=daily`);
       const d=D[a.k]=Object.assign(D[a.k]||{},{prices:c.prices.map(x=>x[1]).filter(x=>x>0)});
       if(d.price)d.prices[d.prices.length-1]=d.price;
       d.m=analyze(Object.assign({k:a.k},d));
