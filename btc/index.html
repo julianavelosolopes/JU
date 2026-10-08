@@ -226,9 +226,9 @@ function renderDetail(){
   const A=ASSETS.find(a=>a.k===sel),d=D[A.k];
   if(!d?.m){$("detail").innerHTML='<div class="card">Carregando dados…</div>';return}
   const m=d.m,h=horizon(A,m,FNG),r=riskOf(A,m);
-  const stop=Math.max(m.lo30*0.97,m.last-2.5*m.dailyVol/100*m.last*Math.sqrt(7));
+  const stop=Math.min(m.last*(1-Math.max(0.08,Math.min(0.35,2*m.dailyVol/100*Math.sqrt(7)))),m.lo30*0.97);
   const stopPct=(stop/m.last-1)*100;
-  const tgt1=m.hi30,tgt2=m.hi;
+  const tgt1=m.hi30>m.last*1.02?m.hi30:m.last*(1+Math.max(0.1,m.dailyVol/100*Math.sqrt(30))),tgt2=m.hi>tgt1*1.05?m.hi:tgt1*(1+Math.max(0.1,m.dailyVol/100*Math.sqrt(30)));
   const dayRisk=m.dailyVol;
   $("detail").innerHTML=`
   <div class="grid">
@@ -268,8 +268,8 @@ function renderDetail(){
    <tr><td>Stop de proteção (curto)</td><td>${brl(stop)} (${num(stopPct,1)}%)</td><td>Se perder esse nível, reduzir ou sair. Baseado na mínima de 30d e na volatilidade recente.</td></tr>
    <tr><td>Perda da média de 50 dias</td><td>${brl(m.sma50)}</td><td>Fechamento diário abaixo: reduzir parte da posição (médio prazo enfraquece).</td></tr>
    <tr><td>Perda da média de 200 dias</td><td>${brl(m.sma200)}</td><td>Fechamento abaixo: sinal de mudança de tendência de longo prazo; reavaliar a tese.</td></tr>
-   <tr><td>Realização parcial 1</td><td>${brl(tgt1)}</td><td>Máxima de 30 dias. Realizar 25-33% se RSI &gt; 70.</td></tr>
-   <tr><td>Realização parcial 2</td><td>${brl(tgt2)}</td><td>Máxima de 1 ano. Realizar mais uma parte e subir o stop do restante.</td></tr>
+   <tr><td>Realização parcial 1</td><td>${brl(tgt1)}</td><td>Máxima de 30 dias (ou +1 desvio mensal se já estiver no topo). Realizar 25-33% se RSI &gt; 70.</td></tr>
+   <tr><td>Realização parcial 2</td><td>${brl(tgt2)}</td><td>Máxima de 1 ano (ou projeção, se já estiver no topo). Realizar mais uma parte e subir o stop do restante.</td></tr>
   </table></div>
   <p class="note">Regra prática: se a oscilação diária típica é ±${num(dayRisk)}%, arrisque no máximo 1-2% do patrimônio total por posição entre entrada e stop. Defina o plano antes de comprar, não durante o pânico.</p>`;
   document.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{range=+b.dataset.r;renderDetail()});
