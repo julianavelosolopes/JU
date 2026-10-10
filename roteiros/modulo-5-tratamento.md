@@ -20,7 +20,7 @@ Eu fiquei assim. Esta aula é sobre isso.
 
 Agora vou te explicar o que a ciência diz, porque a minha história é só uma história.
 
-Os consensos e as revisões grandes sobre o tratamento do TDAH em adultos mostram que a medicação é uma das intervenções com melhor evidência. Uma grande meta-análise publicada na Lancet Psychiatry, que comparou vários remédios, concluiu que os estimulantes têm os melhores resultados em adultos para reduzir os sintomas. Existem também opções que não são estimulantes, que podem ser escolhidas em alguns casos. Quem escolhe e acompanha é o médico, de acordo com o seu histórico, as suas outras condições e a sua saúde.
+Os consensos e as revisões grandes sobre o tratamento do TDAH em adultos mostram que a medicação é uma das intervenções com melhor evidência. Uma grande meta-análise publicada na Lancet Psychiatry, que comparou vários remédios, concluiu que, no curto prazo, as anfetaminas, que são uma classe de estimulantes, tiveram o melhor equilíbrio entre eficácia e segurança em adultos. Os próprios autores lembram que faltam estudos de longo prazo. Existem também opções que não são estimulantes, que podem ser escolhidas em alguns casos. Quem escolhe e acompanha é o médico, de acordo com o seu histórico, as suas outras condições e a sua saúde.
 
 Alguns pontos para tirar o medo de forma honesta.
 
@@ -52,7 +52,7 @@ Você toma o remédio direitinho, mas continua dormindo quatro horas por noite, 
 
 Muitas vezes o que falta não é o remédio, é o resto. Vamos falar dele.
 
-**Sono.** Problemas de sono são muito comuns em adultos com TDAH, e dormir mal piora quase todos os sintomas: atenção, memória, humor. Uma revisão sobre o assunto descreve essa relação como bidirecional. Por isso, quando uma mulher chega com dificuldade de atenção, uma das primeiras perguntas é como ela dorme. Dicas básicas: horários regulares, telas longe da cama, luz do dia pela manhã, cuidado com cafeína à tarde. Se o problema persistir, vale investigar com o médico, porque apneia e outros problemas podem estar por trás. Nos materiais de apoio do curso você tem o Diário Semanal do Sono: preencha uma semana e leve para a consulta, porque dados reais ajudam muito mais do que a memória.
+**Sono.** Problemas de sono são comuns em quem tem TDAH, e dormir mal piora atenção, memória e humor. Uma revisão sobre o assunto descreve essa relação como complexa e nos dois sentidos: o TDAH pode atrapalhar o sono, e o sono ruim pode piorar ou imitar o TDAH. Por isso, quando uma mulher chega com dificuldade de atenção, uma das primeiras perguntas é como ela dorme. Dicas básicas: horários regulares, telas longe da cama, luz do dia pela manhã, cuidado com cafeína à tarde. Se o problema persistir, vale investigar com o médico, porque apneia e outros problemas podem estar por trás. Nos materiais de apoio do curso você tem o Diário Semanal do Sono: preencha uma semana e leve para a consulta, porque dados reais ajudam muito mais do que a memória.
 
 **Movimento.** Atividade física faz bem ao humor, ao sono e à energia, e muitas pessoas com TDAH relatam que ajuda no dia a dia. A evidência de que ela reduza os sintomas centrais do TDAH em adultos é mais modesta do que a evidência da medicação, então ela entra como aliada, não como substituta.
 
