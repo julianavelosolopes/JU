@@ -68,7 +68,7 @@ Coloque tudo o que der em débito automático. Escolha um dia fixo no mês para 
 **Casa.**
 Eu não consigo lavar a louça quando a pia está cheia. Então eu tiro tudo de dentro e deixo só um pouco, como se fosse só aquilo. Funciona, porque a tarefa passa a parecer possível.
 
-**[SUA HISTÓRIA. Confirme ou ajuste a cena da louça com as suas palavras, e conte outro truque de casa que você usa.]**
+**[SUA HISTÓRIA. Conte outro truque de casa que você usa.]**
 
 Outras ideias: uma coisa por vez, com timer de dez minutos. Um cesto em cada cômodo para o que está fora do lugar. Rotinas presas a algo que já acontece, como arrumar a cozinha enquanto o café passa. E baixar o padrão: casa funcional vale mais do que casa perfeita.
 
