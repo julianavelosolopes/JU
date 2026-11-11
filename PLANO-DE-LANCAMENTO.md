@@ -6,6 +6,12 @@ Como ler: `[ ]` é pendente e `[x]` é pronto.
 
 ---
 
+## 0. O posicionamento (o que diferencia este curso)
+
+Quem ensina é médica e é paciente. A Dra. Juliana recebeu o diagnóstico de TDAH já adulta, estudou Medicina chorando em cima dos livros, duvidou da própria capacidade, e mesmo assim se formou e tem o diploma reconhecido em três países (Argentina, Brasil e Espanha). A frase central é: "Eu sei quanto custa dar conta, porque eu sinto na pele."
+
+Esse posicionamento aparece no título da página, na aula 0.1 e em todo conteúdo de divulgação. Cuidado de redação: dizer "diploma reconhecido em três países", e só dizer "médica em três países" se houver registro profissional ativo nos três.
+
 ## 1. O que vender, e como (a "escada de produtos")
 
 Pense numa escada. A pessoa começa de graça, depois compra algo pequeno, depois o curso completo. Cada degrau prepara o seguinte.
