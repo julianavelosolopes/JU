@@ -22,7 +22,7 @@ Eu estudei Medicina chorando em cima dos livros. Eu lia, relia, e duvidava da mi
 
 **[SUA HISTÓRIA 1. Conte uma cena real desse tempo: uma noite de estudo, uma prova, uma frase que você dizia para si mesma. Uma cena só, bem concreta, vale mais do que um resumo.]**
 
-Mesmo assim eu me formei, em outro país e em outra língua. Hoje o meu diploma de médica é reconhecido na Argentina, no Brasil e na Espanha. E eu te conto isso por um motivo: durante todo esse caminho eu não sabia por que tudo custava tanto.
+Mesmo assim eu me formei, em outro país e em outra língua. Hoje eu sou médica com registro ativo na Argentina e no Brasil, e tenho o diploma reconhecido também na Espanha. E eu te conto isso por um motivo: durante todo esse caminho eu não sabia por que tudo custava tanto.
 
 O diagnóstico de TDAH só chegou quando eu já era adulta. E eu vou ser sincera com você: eu não aceitei o tratamento de primeira.
 
