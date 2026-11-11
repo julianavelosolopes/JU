@@ -43,6 +43,16 @@
 - Lai MC, et al. Quantifying and exploring camouflaging in men and women with autism. *Autism.* 2017;21(6):690-702.
 - Hull L, Petrides KV, Mandy W. The female autism phenotype and camouflaging: a narrative review. *Rev J Autism Dev Disord.* 2020;7:306-317.
 
+## Fontes das aulas novas (módulos 7 a 9), ainda sem conferência
+
+Estas referências foram citadas de memória nas aulas novas e **não passaram pela conferência de 10/10/2026**. Conferir título, revista, volume e páginas antes de gravar.
+
+- Dorani F, et al. Prevalence of hormone-related mood disorder symptoms in women with ADHD. *J Psychiatr Res.* 2021;133:10-15. (aula 7.1)
+- Lai MC, et al. Prevalence of co-occurring mental health diagnoses in the autism population: a systematic review and meta-analysis. *Lancet Psychiatry.* 2019;6:819-829. (aula 7.2)
+- Raymaker DM, et al. "Having all of your internal resources exhausted beyond measure and being left with no clean-up crew": defining autistic burnout. *Autism in Adulthood.* 2020;2(2):132-143. (aula 7.4)
+- Hyman SL, Levy SE, Myers SM. Identification, evaluation, and management of children with autism spectrum disorder. *Pediatrics.* 2020;145(1):e20193447. (aula 9.2)
+- Sandin S, et al. The heritability of autism spectrum disorder. *JAMA.* 2017;318(12):1182-1184. (aula 9.2)
+
 ## Legislação (conferir o texto vigente com um advogado antes de falar em vídeo)
 
 - Lei nº 12.764/2012 (Política Nacional de Proteção dos Direitos da Pessoa com Transtorno do Espectro Autista).

@@ -21,7 +21,7 @@ Pense numa escada. A pessoa começa de graça, depois compra algo pequeno, depoi
 | **1. Isca grátis** | Diário de Foco, versão simples (1 página, para copiar) | WhatsApp ou formulário, em troca do contato | Quem te segue no Instagram | `[ ]` simplificar o material |
 | **1. Isca grátis** | Aula-amostra: a aula 1.1 "A mulher que sempre deu conta" | Reel de 60 s e vídeo completo no YouTube ou Instagram | Qualquer pessoa | `[ ]` gravar |
 | **2. Entrada (valor baixo)** | **A Chave Mestra da Ansiedade** (ebook, 43 páginas) | Hotmart ou Kiwify, produto separado | Quem ainda não está pronta para o curso | `[ ]` criar o produto |
-| **3. Principal** | **Curso Isso Tem Nome: Diagnóstico Tardio** (14 aulas) | Hotmart ou Kiwify | Quem quer entender e se preparar para a avaliação | `[ ]` gravar e criar o produto |
+| **3. Principal** | **Curso Isso Tem Nome: Diagnóstico Tardio** (24 aulas) | Hotmart ou Kiwify | Quem quer entender e se preparar para a avaliação | `[ ]` gravar e criar o produto |
 | **3. Bônus do curso** | Diário de Foco completo, Diário Semanal do Sono, Planner Semanal, PDF de apoio por módulo | Área de membros, junto do curso | Quem comprar o curso | `[ ]` transformar em PDF |
 | **3. Oferta extra no checkout** | A Chave Mestra da Ansiedade | Aparece na tela de pagamento do curso ("quer levar também?") | Quem está comprando o curso | `[ ]` ativar na plataforma |
 | **4. Mais tarde** | Kit de diários (Foco + Sono + Planner) vendido sozinho | Produto separado | Quem quer só as ferramentas | `[ ]` só depois que o curso validar |
@@ -37,7 +37,7 @@ Pense numa escada. A pessoa começa de graça, depois compra algo pequeno, depoi
 
 ## 2. O que gravar
 
-### 2.1 As 14 aulas (roteiros prontos na pasta `roteiros/`)
+### 2.1 As 24 aulas (roteiros prontos na pasta `roteiros/`)
 Ordem sugerida de gravação, das mais importantes para as mais simples:
 
 1. `[ ]` **Aula 0.1** Oi, eu sou a Juliana (3 a 4 min). Tem a sua história.
@@ -54,15 +54,37 @@ Ordem sugerida de gravação, das mais importantes para as mais simples:
 12. `[ ]` Aula 6.1 Uma rotina que respeita o seu cérebro (7 a 9 min)
 13. `[ ]` Aula 6.2 Relacionamentos, maternidade e descanso (7 a 9 min)
 14. `[ ]` Aula 6.3 E agora? (3 a 4 min)
+15. `[ ]` Aula 7.1 Hormônios e ciclo (7 a 9 min)
+16. `[ ]` Aula 7.2 Ansiedade e depressão junto com o TDAH (7 a 9 min)
+17. `[ ]` Aula 7.3 Sobrecarga sensorial e crise (7 a 9 min)
+18. `[ ]` Aula 7.4 Burnout (7 a 9 min)
+19. `[ ]` **Aula 8.1** Estudo e trabalho (8 a 10 min). Tem a sua história com os livros.
+20. `[ ]` Aula 8.2 Dinheiro, casa e burocracia (7 a 9 min)
+21. `[ ]` Aula 8.3 Como encontrar um bom profissional (6 a 8 min)
+22. `[ ]` Aula 9.1 Para quem convive (7 a 9 min). Você fala com o familiar, e não com a aluna.
+23. `[ ]` Aula 9.2 Meu filho é autista, e agora? (10 a 12 min)
+24. `[ ]` **Aula bônus** Médica e paciente (15 a 20 min). Roteiro de perguntas em `roteiros/bonus-minha-historia.md`.
 
-Total: cerca de 1 hora e 30 minutos de vídeo. Grave em 3 ou 4 dias, no mesmo cenário e com a mesma roupa, para ficar uniforme.
+Total: cerca de 3 horas e 15 minutos de vídeo. Grave em 6 a 8 dias, no mesmo cenário e com a mesma roupa, para ficar uniforme.
 
-### 2.2 Vídeos de divulgação
+### 2.2 Formato de todas as aulas (pensado para quem é neurodivergente)
+- `[ ]` Abrir cada aula com o "Em 1 minuto": o que a pessoa vai levar dali. As aulas dos módulos 7 a 9 já têm. Falta escrever para os módulos 0 a 6.
+- `[ ]` Legenda em todas as aulas e versão só em áudio.
+- `[ ]` Capítulos marcados no vídeo.
+- `[ ]` Resumo de uma página por aula, em PDF.
+- `[ ]` Sem ordem obrigatória: usar o "Mapa do curso", que está no caderno de exercícios.
+- `[ ]` Sem cobrança de ritmo: só uma lista para marcar o que já viu.
+
+### 2.3 Materiais do curso
+- `[x]` Caderno de exercícios, com mapa do curso, roteiro para a consulta, cartão de crise e frases prontas (`materiais/caderno-de-exercicios.md`). Falta diagramar em PDF com a sua marca.
+- `[ ]` Diário de Foco, Diário Semanal do Sono e Planner Semanal, que você já tem.
+
+### 2.4 Vídeos de divulgação
 - `[ ]` **Vídeo de vendas** (2 a 3 min), para a página: a sua história, para quem é o curso e o que a pessoa leva.
 - `[ ]` **Trailer** (30 a 60 s), para o Instagram.
 - `[ ]` **10 reels** de pré-lançamento (ideias na seção 4).
 
-### 2.3 Dicas de gravação
+### 2.5 Dicas de gravação
 Luz natural de frente, microfone de lapela, câmera na altura dos olhos, fundo calmo. Fale com as suas palavras e use o roteiro como apoio, sem decorar.
 
 ---
