@@ -4,6 +4,8 @@
 
 ## Aula 2.1 · TDAH no adulto: o que a ciência diz (7 a 9 min)
 
+**Em 1 minuto:** o TDAH é uma condição real, que começa na infância e vai além da atenção. O diagnóstico depende de história de vida, e não de uma lista de sintomas.
+
 **Objetivo:** explicar o que é o TDAH e como o manual diagnóstico o descreve, sem transformar a aula numa checagem de sintomas.
 
 ### Roteiro falado
@@ -49,6 +51,8 @@ Entender como a atenção funciona muda a forma como você se cobra. Porque ente
 ---
 
 ## Aula 2.2 · Autismo no adulto e o que se parece com TDAH (7 a 9 min)
+
+**Em 1 minuto:** o autismo tem muitas formas de aparecer, e em mulheres costuma ser mais discreto. TDAH e autismo se parecem em alguns pontos e podem existir juntos.
 
 **Objetivo:** apresentar o autismo de forma simples, mostrar onde ele e o TDAH se encontram, e reforçar que os dois podem coexistir.
 

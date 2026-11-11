@@ -4,6 +4,8 @@
 
 ## Aula 3.1 · O que acontece numa avaliação diagnóstica (6 a 8 min)
 
+**Em 1 minuto:** uma avaliação séria é uma conversa longa sobre a sua vida inteira, e pode levar mais de uma consulta. Saber como ela funciona tira boa parte do medo.
+
 **Objetivo:** tirar o mistério e o medo da avaliação, e mostrar por que ela leva tempo.
 
 ### Roteiro falado
@@ -41,6 +43,8 @@ Saber o caminho tira metade do medo. Porque entender muda muita coisa.
 ---
 
 ## Aula 3.2 · Como se preparar para a consulta, e por que teste de internet não serve (5 a 7 min)
+
+**Em 1 minuto:** teste de internet serve, no máximo, de empurrão para marcar a consulta. Aqui você aprende a organizar a sua história para chegar preparada.
 
 **Objetivo:** dar uma ferramenta prática e desencorajar o autodiagnóstico sem julgamento.
 

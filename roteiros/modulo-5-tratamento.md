@@ -6,6 +6,8 @@
 
 ## Aula 5.1 · O dia em que eu aceitei o tratamento (8 a 10 min)
 
+**Em 1 minuto:** eu também tive medo da medicação e demorei para aceitar. Te conto o que a ciência diz sobre ela e por que ela é só um dos pilares.
+
 **Objetivo:** reduzir o medo da medicação com informação honesta, mostrando que ela é um dos pilares e não a solução inteira.
 
 ### Roteiro falado
@@ -43,6 +45,8 @@ Eu levei tempo para aceitar. E só depois de aceitar, entendi por que ele import
 ---
 
 ## Aula 5.2 · Os outros pilares: sono, movimento, alimentação e terapia (7 a 9 min)
+
+**Em 1 minuto:** sono, movimento, alimentação, terapia e ambiente sustentam o tratamento junto com o remédio. Você não precisa cuidar de todos de uma vez.
 
 **Objetivo:** mostrar o que mais compõe o tratamento, com honestidade sobre o nível de evidência de cada parte.
 

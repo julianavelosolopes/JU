@@ -68,7 +68,7 @@ Ordem sugerida de gravação, das mais importantes para as mais simples:
 Total: cerca de 3 horas e 15 minutos de vídeo. Grave em 6 a 8 dias, no mesmo cenário e com a mesma roupa, para ficar uniforme.
 
 ### 2.2 Formato de todas as aulas (pensado para quem é neurodivergente)
-- `[ ]` Abrir cada aula com o "Em 1 minuto": o que a pessoa vai levar dali. As aulas dos módulos 7 a 9 já têm. Falta escrever para os módulos 0 a 6.
+- `[x]` Abrir cada aula com o "Em 1 minuto": o que a pessoa vai levar dali. Todas as 24 aulas já têm o texto. Falta gravar.
 - `[ ]` Legenda em todas as aulas e versão só em áudio.
 - `[ ]` Capítulos marcados no vídeo.
 - `[ ]` Resumo de uma página por aula, em PDF.

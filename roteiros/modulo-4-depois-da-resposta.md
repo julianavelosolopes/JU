@@ -4,6 +4,8 @@
 
 ## Aula 4.1 · Alívio, luto e raiva: tudo isso é normal (6 a 8 min)
 
+**Em 1 minuto:** depois do diagnóstico é comum sentir alívio, luto, raiva e dúvida, tudo misturado. Essas emoções fazem sentido e pedem tempo.
+
 **Objetivo:** validar as emoções que costumam vir com um diagnóstico na vida adulta, sem romantizar e sem dramatizar.
 
 ### Roteiro falado
@@ -39,6 +41,8 @@ Receber uma resposta tarde não apaga o que você viveu, mas muda o que você fa
 ---
 
 ## Aula 4.2 · Como contar para a família e para o trabalho (6 a 8 min)
+
+**Em 1 minuto:** você decide quem sabe, quando e quanto. Aqui tem ideias de como contar para a família e o que pensar antes de falar no trabalho.
 
 **Objetivo:** dar roteiros práticos de conversa e orientar sobre o direito de escolher quem saberá.
 

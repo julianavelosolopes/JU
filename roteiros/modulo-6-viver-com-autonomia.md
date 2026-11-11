@@ -4,6 +4,8 @@
 
 ## Aula 6.1 · Uma rotina que respeita o seu cérebro (7 a 9 min)
 
+**Em 1 minuto:** o que mais funciona é mudar o ambiente para o cérebro precisar lembrar menos. Aqui tem ideias práticas para começar esta semana.
+
 **Objetivo:** dar estratégias práticas baseadas na ideia de externalizar o que o cérebro não sustenta, e reforçar que a culpa não ajuda.
 
 ### Roteiro falado
@@ -44,6 +46,8 @@ Quando você muda o ambiente, você para de lutar contra o seu próprio cérebro
 
 ## Aula 6.2 · Relacionamentos, maternidade e descanso de verdade (7 a 9 min)
 
+**Em 1 minuto:** emoções intensas, maternidade pesada e dificuldade de descansar são comuns. Dá para aprender a nomear o que sente, pedir pausa e descansar de verdade.
+
 **Objetivo:** tratar das emoções e dos relacionamentos, e fechar com uma ideia de autocuidado realista.
 
 ### Roteiro falado
@@ -75,6 +79,8 @@ Você não precisa mais lutar contra a sua cabeça para ser digna de cuidado. Po
 ---
 
 ## Aula 6.3 · E agora? (3 a 4 min)
+
+**Em 1 minuto:** um resumo do caminho que fizemos e o próximo passo para cada situação.
 
 **Objetivo:** encerrar o curso com uma reflexão, sem venda, no tom do canal.
 

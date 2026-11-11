@@ -4,6 +4,8 @@
 
 ## Aula 1.1 · A mulher que sempre deu conta (6 a 8 min)
 
+**Em 1 minuto:** dar conta por anos não prova que estava tudo bem. Muitas mulheres escondem as dificuldades com estratégias que funcionam, mas custam muita energia.
+
 **Objetivo:** explicar compensação e mascaramento em linguagem simples, e tirar a culpa de quem "dava conta".
 
 ### Roteiro falado
@@ -43,6 +45,8 @@ Dar conta nunca foi prova de que estava tudo bem. Porque entender muda muita coi
 ---
 
 ## Aula 1.2 · Por que a medicina demorou a olhar para nós (6 a 8 min)
+
+**Em 1 minuto:** o diagnóstico em mulheres costuma sair tarde por motivos que têm explicação. Demorar para entender não foi falha sua.
 
 **Objetivo:** explicar de forma honesta e sem culpar ninguém por que o diagnóstico em mulheres costuma sair tarde.
 

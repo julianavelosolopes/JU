@@ -8,6 +8,8 @@
 
 ## Aula 0.1 · Oi, eu sou a Juliana (3 a 4 min)
 
+**Em 1 minuto:** eu sou médica e também sou paciente. Aqui eu te conto por que este curso existe, o que ele faz por você e o que ele não faz.
+
 **Objetivo:** a pessoa sentir que quem ensina já passou pelo mesmo caminho, e entender como o curso funciona.
 
 **Visual sugerido:** você sentada, sem jaleco, câmera na altura dos olhos. Sem trilha dramática.
