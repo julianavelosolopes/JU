@@ -59,6 +59,7 @@ Qualquer dúvida, é só responder esta mensagem. Para sair da lista, responda S
 Oi, [nome]. Bem-vinda. Eu sou a Juliana e fico muito feliz que você esteja aqui.
 
 Antes de tudo, três avisos para a sua cabeça ficar tranquila:
+
 1. Você não precisa assistir em ordem. Se quiser um caminho, o Caderno de exercícios tem um mapa por onde começar conforme a sua situação.
 2. Você não precisa terminar rápido. Não existe prazo nem cobrança.
 3. Se a sua cabeça dispersar no meio de uma aula, é normal. Cada aula começa com um "Em 1 minuto", e tem resumo de uma página e legenda.

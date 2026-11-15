@@ -65,13 +65,13 @@ Evitar travessão, contrastes dramáticos do tipo "não é X, é Y", frases frag
 
 ## 7. Calendário de 5 semanas
 
-| Semana | Tema | Peças |
+| Quando | Tema | Peças |
 |---|---|---|
-| -4 | A mulher que sempre deu conta | 3 reels (cena e mascaramento), 1 carrossel, stories com caixa de perguntas |
-| -3 | Por que ninguém percebeu antes | 3 reels, 1 carrossel, enquete "o que te disseram na escola?" |
-| -2 | Entrega da isca: Diário de Foco | 2 reels, stories com o convite, sequência de mensagens |
-| -1 | A história pessoal | 1 reel longo com a história da Dra. Juliana, trailer, contagem regressiva real |
-| 0 | Lançamento | Vídeo de vendas, reels explicando o curso, stories com perguntas e respostas |
+| 4 semanas antes | A mulher que sempre deu conta | 3 reels (cena e mascaramento), 1 carrossel, stories com caixa de perguntas |
+| 3 semanas antes | Por que ninguém percebeu antes | 3 reels, 1 carrossel, enquete "o que te disseram na escola?" |
+| 2 semanas antes | Entrega da isca: Diário de Foco | 2 reels, stories com o convite, sequência de mensagens |
+| 1 semana antes | A história pessoal | 1 reel longo com a história da Dra. Juliana, trailer, contagem regressiva real |
+| Semana do lançamento | Lançamento | Vídeo de vendas, reels explicando o curso, stories com perguntas e respostas |
 
 ## 8. 20 ideias de reels (nada de "será que você tem")
 

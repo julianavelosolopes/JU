@@ -20,12 +20,14 @@ Eu sei quanto custa dar conta, porque eu sinto na pele.
 Sou a Dra. Juliana Veloso, médica com pós-graduação em psiquiatria. Estudei Medicina chorando em cima dos livros, duvidei da minha capacidade e recebi o diagnóstico de TDAH já adulta. Hoje sou médica com registro ativo na Argentina e no Brasil, e tenho o diploma reconhecido também na Espanha. Este curso é o que eu gostaria de ter ouvido naquela época, dito em linguagem simples, por quem estudou o assunto e também viveu o assunto.
 
 **Para quem é**
+
 - Mulheres que se esforçam muito para dar conta e querem entender por quê.
 - Quem recebeu um diagnóstico de TDAH ou autismo na vida adulta e quer organizar o que isso significa.
 - Quem está pensando em procurar uma avaliação e quer chegar preparada.
 - Mães, parceiros e familiares que querem compreender melhor uma mulher neurodivergente.
 
 **O que você vai encontrar**
+
 - 24 aulas curtas, de 3 a 12 minutos, com um "Em 1 minuto" no começo de cada uma para você saber o que vai levar dali.
 - Módulos sobre o motivo de o diagnóstico sair tarde, como TDAH e autismo aparecem na mulher adulta, como funciona uma avaliação séria, o que sentir depois da resposta, tratamento e rotina.
 - Aulas sobre hormônios e ciclo, ansiedade e depressão junto com o TDAH, sobrecarga sensorial e burnout.
@@ -45,6 +47,7 @@ Este curso tem finalidade educativa. Ele não faz diagnóstico e não substitui 
 7 dias. Se não fizer sentido para você, devolvemos o valor integral, pelo processo da plataforma.
 
 **Perguntas frequentes**
+
 - *O curso vai me dar um diagnóstico?* Não. Ele explica como o processo funciona e te ajuda a chegar mais preparada a uma avaliação.
 - *Já tenho diagnóstico. Serve para mim?* Sim. Os módulos 4 a 9 foram pensados para quem quer viver melhor depois da resposta.
 - *Preciso assistir em ordem?* Não. O caderno traz um mapa de por onde começar conforme a sua situação.
@@ -69,6 +72,7 @@ Você chega ao fim do dia esgotada, sem ter parado, e com a sensação de que al
 Neste guia a Dra. Juliana Veloso, médica com pós-graduação em psiquiatria, explica de forma simples o que é saúde mental, quando a ansiedade é e quando não é um transtorno, e quais mitos atrapalham quem convive com ela.
 
 **O que você vai encontrar**
+
 - O que é saúde mental e como a ansiedade se encaixa nela.
 - Mitos sobre a ansiedade.
 - Técnicas de respiração.

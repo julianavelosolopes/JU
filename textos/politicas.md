@@ -39,6 +39,7 @@
 **Quem é responsável pelos dados.** [nome completo, CPF], com contato em [e-mail de privacidade].
 
 **Quais dados coletamos.**
+
 - Na compra, a plataforma ([Hotmart/Kiwify]) coleta nome, e-mail, CPF, telefone e dados de pagamento. Nós recebemos da plataforma nome, e-mail e telefone para dar suporte.
 - Quando você pede o Diário de Foco gratuito, coletamos nome, e-mail e/ou WhatsApp.
 - Dados de navegação da página, como cookies, se você aceitar.
