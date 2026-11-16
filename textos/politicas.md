@@ -16,7 +16,7 @@
 
 ## 2. Termos de uso
 
-**Quem somos.** O curso "Isso Tem Nome: Diagnóstico Tardio" e os materiais que o acompanham são produzidos e vendidos por [nome completo, CPF], médica, CRM-BA 43.109.
+**Quem somos.** O curso "Isso Tem Nome: Diagnóstico Tardio" e os materiais que o acompanham são produzidos e vendidos por Juliana Veloso Cruz Lopes, CPF 029.291.025-86, médica, CRM-BA 43.109.
 
 **Natureza do conteúdo.** O conteúdo é educativo. Ele não faz diagnóstico, não indica tratamento individual e não substitui consulta, avaliação ou acompanhamento com um profissional de saúde. Nenhuma informação do curso deve ser usada para começar, parar ou mudar medicação sem orientação do seu médico. Em caso de urgência, procure um serviço de emergência. No Brasil, o CVV atende pelo 188, a qualquer hora, de graça.
 
@@ -36,7 +36,7 @@
 
 ## 3. Política de privacidade (LGPD)
 
-**Quem é responsável pelos dados.** [nome completo, CPF], com contato em [e-mail de privacidade].
+**Quem é responsável pelos dados.** Juliana Veloso Cruz Lopes, CPF 029.291.025-86, com contato em [e-mail de privacidade].
 
 **Quais dados coletamos.**
 
